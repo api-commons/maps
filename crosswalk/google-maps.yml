@@ -1,7 +1,7 @@
 provider: google-maps
 apis_io: https://apis.io/providers/google-maps/
 context: maps
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   place:
     path_segment:

@@ -1,7 +1,7 @@
 provider: spring-cloud-gateway
 apis_io: https://apis.io/providers/spring-cloud-gateway/
 context: maps
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   route:
     path_segment:

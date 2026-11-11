@@ -1,7 +1,7 @@
 provider: geocodio
 apis_io: https://apis.io/providers/geocodio/
 context: maps
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   geocode:
     path_segment:

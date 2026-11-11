@@ -1,7 +1,7 @@
 provider: precisely-apis
 apis_io: https://apis.io/providers/precisely-apis/
 context: maps
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   place:
     path_segment:

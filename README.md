@@ -17,7 +17,7 @@ generated. Every number below is a count of providers.
 | route | 15 | 13 |  | route 7, routes 6, directions 3, routing 1 |
 | distance_matrix | 9 | 8 | destinations 88%, origins 88%, id 50%, units 50% | matrix 5, sources_to_targets 3, distance-matrix 1, matrices 1 |
 
-Cohort: 193 providers with harvested OpenAPI, 45 crosswalks. Of the providers exposing a geocode: 23% create, 86% list, 4% fetch, 0% update, 0% delete. Generated 2026-11-10 by build.py.
+Cohort: 193 providers with harvested OpenAPI, 45 crosswalks. Of the providers exposing a geocode: 23% create, 86% list, 4% fetch, 0% update, 0% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
