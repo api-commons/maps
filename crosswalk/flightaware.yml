@@ -6,8 +6,15 @@ concepts:
   place:
     path_segment:
     - nearby
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      name: name
+      latitude: latitude
+      longitude: longitude
+      city: city
+      country: country_code
+      region: state
+      distance: distance
+    core_coverage: 0.25
     evidence:
     - openapi/_original/flightaware-openapi.yml#GET /airports/nearby
     - openapi/_original/flightaware-openapi.yml#GET /airports/{id}/nearby
@@ -15,7 +22,8 @@ concepts:
     path_segment:
     - route
     - routes
-    properties: {}
+    properties:
+      name: name
     core_coverage: 0.0
     evidence:
     - openapi/_original/flightaware-openapi.yml#GET /airports/{id}/routes/{dest_id}

@@ -5,6 +5,17 @@
   "description": "The common place in Maps and Geocoding, distilled from 24 providers' own OpenAPI. Each property records the share of them that declare it.",
   "type": "object",
   "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.75,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "Name"
+      ]
+    },
     "id": {
       "type": "string",
       "x-commons-tier": "core",
@@ -21,33 +32,23 @@
         "_id"
       ]
     },
-    "name": {
-      "type": "string",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.667,
-      "x-commons-providers": 16,
-      "x-commons-spellings": [
-        "name",
-        "title",
-        "Name"
-      ]
-    },
     "geometry": {
       "type": "object",
       "x-commons-tier": "core",
-      "x-commons-share": 0.542,
-      "x-commons-providers": 13,
+      "x-commons-share": 0.583,
+      "x-commons-providers": 14,
       "x-commons-spellings": [
         "geometry",
         "location",
-        "viewport"
+        "viewport",
+        "position"
       ]
     },
     "address": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.5,
-      "x-commons-providers": 12,
+      "x-commons-share": 0.542,
+      "x-commons-providers": 13,
       "x-commons-spellings": [
         "address",
         "label",
@@ -59,19 +60,42 @@
     "category": {
       "type": "array",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.375,
-      "x-commons-providers": 9,
+      "x-commons-share": 0.417,
+      "x-commons-providers": 10,
       "x-commons-spellings": [
         "categories",
         "types",
         "category"
       ]
     },
+    "latitude": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "latitude",
+        "lat",
+        "Latitude"
+      ]
+    },
+    "longitude": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "longitude",
+        "lon",
+        "Longitude",
+        "lng"
+      ]
+    },
     "city": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.292,
-      "x-commons-providers": 7,
+      "x-commons-share": 0.333,
+      "x-commons-providers": 8,
       "x-commons-spellings": [
         "locality",
         "city",
@@ -82,8 +106,8 @@
     "country": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.292,
-      "x-commons-providers": 7,
+      "x-commons-share": 0.333,
+      "x-commons-providers": 8,
       "x-commons-spellings": [
         "country",
         "country_code",
@@ -91,46 +115,23 @@
         "CountryName"
       ]
     },
-    "latitude": {
-      "type": "number",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.292,
-      "x-commons-providers": 7,
-      "x-commons-spellings": [
-        "latitude",
-        "lat",
-        "Latitude"
-      ]
-    },
-    "longitude": {
-      "type": "number",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.292,
-      "x-commons-providers": 7,
-      "x-commons-spellings": [
-        "longitude",
-        "lon",
-        "Longitude",
-        "lng"
-      ]
-    },
     "region": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.25,
-      "x-commons-providers": 6,
+      "x-commons-share": 0.292,
+      "x-commons-providers": 7,
       "x-commons-spellings": [
         "region",
-        "county",
         "state",
+        "county",
         "province"
       ]
     },
     "distance": {
       "type": "number",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.208,
-      "x-commons-providers": 5,
+      "x-commons-share": 0.25,
+      "x-commons-providers": 6,
       "x-commons-spellings": [
         "distance"
       ]

@@ -29,10 +29,10 @@ concepts:
     path_segment:
     - place
     properties:
+      name: name
       id:
       - id
       - gid
-      name: name
       geometry: geometry
       address: label
       category: categories

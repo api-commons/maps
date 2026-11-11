@@ -32,15 +32,27 @@
      "GET collection"
     ],
     "properties": {
-     "totalRecords": "integer",
-     "totalPages": "integer",
-     "currentPage": "integer",
-     "reverseDnsRecords": "array",
+     "name": "string",
+     "type": "integer",
+     "dnsType": "string",
+     "ttl": "integer",
+     "rawText": "string",
+     "rRsetType": "integer",
+     "address": "string",
+     "target": "string",
+     "priority": "integer",
+     "singleName": "string",
+     "admin": "string",
+     "host": "string",
+     "expire": "integer",
+     "minimum": "integer",
+     "refresh": "integer",
+     "retry": "integer",
+     "serial": "integer",
+     "strings": "array",
      "lat": "number",
      "lon": "number",
-     "name": "string",
      "category": "string",
-     "type": "string",
      "poi": "array",
      "street": "string",
      "area": "string",
@@ -53,10 +65,52 @@
      "country": "string",
      "full_address": "string",
      "bounding_box": "array",
-     "total_Result": "integer",
-     "total_Pages": "integer",
-     "current_Page": "integer",
-     "whois_domains_historical": "array"
+     "num": "integer",
+     "status": "boolean",
+     "domain_name": "string",
+     "query_time": [
+      "string",
+      "null"
+     ],
+     "whois_server": [
+      "string",
+      "null"
+     ],
+     "domain_registered": [
+      "string",
+      "null"
+     ],
+     "create_date": [
+      "string",
+      "null"
+     ],
+     "update_date": [
+      "string",
+      "null"
+     ],
+     "expiry_date": [
+      "string",
+      "null"
+     ],
+     "domain_registrar": "object",
+     "reseller_contact": "object",
+     "registrant_contact": "object",
+     "administrative_contact": "object",
+     "technical_contact": "object",
+     "billing_contact": "object",
+     "name_servers": [
+      "array",
+      "null"
+     ],
+     "domain_status": [
+      "array",
+      "null"
+     ],
+     "whois_raw_domain": [
+      "string",
+      "null"
+     ],
+     "registry_data": "object"
     },
     "evidence": [
      "openapi/_original/apifreaks-api-hub-for-developers-reverse-dns-lookup-openapi.json#GET /domain/dns/reverse",
@@ -932,9 +986,25 @@
      "GET collection"
     ],
     "properties": {
-     "links": "object",
-     "num_pages": "integer",
-     "airports": "array"
+     "airport_code": "string",
+     "code_icao": "string",
+     "code_iata": "string",
+     "code_lid": "string",
+     "alternate_ident": "string",
+     "name": "string",
+     "type": "string",
+     "elevation": "number",
+     "city": "string",
+     "state": "string",
+     "longitude": "number",
+     "latitude": "number",
+     "timezone": "string",
+     "country_code": "string",
+     "wiki_url": "string",
+     "airport_flights_url": "string",
+     "distance": "integer",
+     "heading": "integer",
+     "direction": "string"
     },
     "evidence": [
      "openapi/_original/flightaware-openapi.yml#GET /airports/nearby",
@@ -1591,12 +1661,7 @@
      "exchangeName": "string",
      "ceoName": "string",
      "ceoTitle": "string",
-     "geometry": "object",
-     "page": "string",
-     "candidates": "string",
-     "totalMatchingCandidates": "string",
-     "poi": "array",
-     "matchedAddress": "object"
+     "geometry": "object"
     },
     "evidence": [
      "openapi/_original/precisely-apis-openapi.yml#GET /places/v1/poi/autocomplete",
@@ -1679,8 +1744,20 @@
      "POST collection"
     ],
     "properties": {
-     "searchParameters": "object",
-     "places": "array",
+     "position": "integer",
+     "title": "string",
+     "address": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "rating": "number",
+     "ratingCount": "integer",
+     "type": "string",
+     "types": "array",
+     "website": "string",
+     "phoneNumber": "string",
+     "description": "string",
+     "category": "string",
+     "cid": "string",
      "q": "string",
      "gl": "string",
      "hl": "string",
@@ -1791,11 +1868,21 @@
      "GET item"
     ],
     "properties": {
-     "route_distance": "string",
-     "fixes": "array",
-     "links": "object",
-     "num_pages": "integer",
-     "routes": "array"
+     "name": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "distance_from_origin": "number",
+     "distance_this_leg": "number",
+     "distance_to_destination": "number",
+     "outbound_course": "number",
+     "type": "string",
+     "aircraft_types": "array",
+     "count": "integer",
+     "filed_altitude_max": "integer",
+     "filed_altitude_min": "integer",
+     "last_departure_time": "string",
+     "route": "string",
+     "route_distance": "string"
     },
     "evidence": [
      "openapi/_original/flightaware-openapi.yml#GET /airports/{id}/routes/{dest_id}",
@@ -1881,8 +1968,6 @@
      "POST collection"
     ],
     "properties": {
-     "routes": "array",
-     "pagination_token": "string",
      "route_handle": "string",
      "status": "string",
      "version": "integer",
@@ -1917,7 +2002,9 @@
      "time_to_first_event": "number",
      "time_to_first_location": "number",
      "completion_type": "string",
-     "optimise": "boolean"
+     "order_handle": "string",
+     "type": "string",
+     "type_index": "integer"
     },
     "evidence": [
      "openapi/_original/hypertrack-openapi.yaml#GET /orders/routes/",
@@ -1934,10 +2021,9 @@
      "POST collection"
     ],
     "properties": {
-     "locations": "array",
-     "costing": "string",
-     "costing_options": "object",
-     "directions_options": "object"
+     "lat": "number",
+     "lon": "number",
+     "type": "string"
     },
     "evidence": [
      "openapi/_original/jawg-maps-openapi.yml#POST /routing/route"
@@ -1955,9 +2041,12 @@
      "type": "string",
      "geometry": "object",
      "properties": "object",
-     "routes": "array",
-     "metadata": "object",
+     "summary": "object",
+     "segments": "array",
      "bbox": "array",
+     "way_points": "array",
+     "extras": "object",
+     "warnings": "array",
      "coordinates": "array",
      "profile": "string",
      "preference": "string",
@@ -2021,10 +2110,6 @@
      "GET item"
     ],
     "properties": {
-     "total": "number",
-     "limit": "number",
-     "offset": "number",
-     "directions": "array",
      "id": "string",
      "dikpala": "string",
      "kind": "string",
@@ -2098,23 +2183,27 @@
      "route_type": "integer",
      "route_type_basic": "integer",
      "route_url": "string",
-     "alternates": "array",
-     "trip": "object",
+     "language": "string",
+     "legs": "array",
+     "linear_references": "array",
+     "locations": "array",
+     "status": "integer",
+     "status_message": "string",
+     "summary": "object",
+     "units": "string",
+     "warnings": "array",
      "costing": "string",
      "costing_options": "object",
      "date_time": "object",
      "exclude_locations": "array",
      "exclude_polygons": null,
      "format": "string",
-     "language": "string",
      "linear_cost_factors": "array",
-     "units": "string",
      "admin_crossings": "boolean",
+     "alternates": "integer",
      "banner_instructions": "boolean",
      "directions_type": "string",
      "elevation_interval": "number",
-     "linear_references": "boolean",
-     "locations": "array",
      "prioritize_bidirectional": "boolean",
      "recostings": "array",
      "roundabout_exits": "boolean",
@@ -2234,9 +2323,15 @@
      "POST collection"
     ],
     "properties": {
-     "origin": "object",
-     "destinations": "array",
+     "query": "string",
+     "location": "array",
+     "id": "string",
+     "distance_miles": "number",
+     "distance_km": "number",
+     "geocode": "object",
+     "duration_seconds": "integer",
      "origins": "array",
+     "destinations": "array",
      "calculation_type": "string",
      "mode": "string",
      "units": "string",
@@ -3582,7 +3677,6 @@
     "geocodio",
     "groundtruth",
     "hypertrack",
-    "jawg-maps",
     "maptiler",
     "microburbs",
     "nominatim",
@@ -3616,7 +3710,6 @@
     "sk-telecom"
    ],
    "other": [
-    "apifreaks-api-hub-for-developers",
     "geoapify",
     "geocodio",
     "radar-io"

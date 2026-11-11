@@ -7,8 +7,8 @@ concepts:
     path_segment:
     - places
     properties:
-      id: id
       name: name
+      id: id
       geometry:
       - location
       - viewport

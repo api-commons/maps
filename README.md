@@ -13,9 +13,9 @@ generated. Every number below is a count of providers.
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
 | geocode | 22 | 21 | address 81%, name 67%, country 62%, confidence 57%, geometry 57%, id 52%, latitude 52%, longitude 52% | reverse 14, geocode 8, search 3, forward 3 |
-| place | 25 | 24 | id 67%, name 67%, geometry 54%, address 50% | places 10, place 5, poi 4, pois 4 |
+| place | 25 | 24 | name 75%, id 67%, geometry 58%, address 54% | places 10, place 5, poi 4, pois 4 |
 | route | 15 | 13 |  | route 7, routes 6, directions 3, routing 1 |
-| distance_matrix | 9 | 8 | destinations 88%, origins 88%, units 50% | matrix 5, sources_to_targets 3, distance-matrix 1, matrices 1 |
+| distance_matrix | 9 | 8 | destinations 88%, origins 88%, id 50%, units 50% | matrix 5, sources_to_targets 3, distance-matrix 1, matrices 1 |
 
 Cohort: 193 providers with harvested OpenAPI, 45 crosswalks. Of the providers exposing a geocode: 23% create, 86% list, 4% fetch, 0% update, 0% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->

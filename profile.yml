@@ -270,6 +270,15 @@ concepts:
       share: 0.04
       tier: long-tail
     properties:
+    - name: name
+      tier: core
+      providers: 18
+      share: 0.75
+      type: string
+      spellings:
+      - name
+      - title
+      - Name
     - name: id
       tier: core
       providers: 16
@@ -284,28 +293,20 @@ concepts:
       - UUID
       - osm_id
       - _id
-    - name: name
-      tier: core
-      providers: 16
-      share: 0.667
-      type: string
-      spellings:
-      - name
-      - title
-      - Name
     - name: geometry
       tier: core
-      providers: 13
-      share: 0.542
+      providers: 14
+      share: 0.583
       type: object
       spellings:
       - geometry
       - location
       - viewport
+      - position
     - name: address
       tier: core
-      providers: 12
-      share: 0.5
+      providers: 13
+      share: 0.542
       type: string
       spellings:
       - address
@@ -315,17 +316,36 @@ concepts:
       - formatted
     - name: category
       tier: extended
-      providers: 9
-      share: 0.375
+      providers: 10
+      share: 0.417
       type: array
       spellings:
       - categories
       - types
       - category
+    - name: latitude
+      tier: extended
+      providers: 9
+      share: 0.375
+      type: number
+      spellings:
+      - latitude
+      - lat
+      - Latitude
+    - name: longitude
+      tier: extended
+      providers: 9
+      share: 0.375
+      type: number
+      spellings:
+      - longitude
+      - lon
+      - Longitude
+      - lng
     - name: city
       tier: extended
-      providers: 7
-      share: 0.292
+      providers: 8
+      share: 0.333
       type: string
       spellings:
       - locality
@@ -334,55 +354,38 @@ concepts:
       - town
     - name: country
       tier: extended
-      providers: 7
-      share: 0.292
+      providers: 8
+      share: 0.333
       type: string
       spellings:
       - country
       - country_code
       - CountryCode
       - CountryName
-    - name: latitude
-      tier: extended
-      providers: 7
-      share: 0.292
-      type: number
-      spellings:
-      - latitude
-      - lat
-      - Latitude
-    - name: longitude
-      tier: extended
-      providers: 7
-      share: 0.292
-      type: number
-      spellings:
-      - longitude
-      - lon
-      - Longitude
-      - lng
     - name: region
       tier: extended
-      providers: 6
-      share: 0.25
+      providers: 7
+      share: 0.292
       type: string
       spellings:
       - region
-      - county
       - state
+      - county
       - province
     - name: distance
       tier: extended
-      providers: 5
-      share: 0.208
+      providers: 6
+      share: 0.25
       type: number
       spellings:
       - distance
-    long_tail_count: 369
+    long_tail_count: 375
     long_tail_sample:
     - confidence
     - housenumber
     - layer
+    - phone
+    - rating
     - street
     - borough
     - country_gid
@@ -390,13 +393,13 @@ concepts:
     - locality_gid
     - neighbourhood
     - opening_hours
-    - phone
     - photos
     - poi_id
     - postalcode
-    - rating
     - source
     - source_id
+    - timezone
+    - website
     - addendum
     - amenities
     - borough_gid
@@ -405,6 +408,7 @@ concepts:
     - category_ids
     - continent
     - counts
+    - description
     - google_maps_uri
     - national_phone_number
     - neighbourhood_gid
@@ -417,9 +421,6 @@ concepts:
     - region_gid
     - regular_opening_hours
     - relevance_score
-    - reviews
-    - sector
-    - short_formatted_address
   route:
     segments_seen:
       route: 7
@@ -481,6 +482,15 @@ concepts:
       spellings:
       - duration
       - time
+    - name: legs
+      tier: extended
+      providers: 4
+      share: 0.308
+      type: array
+      spellings:
+      - legs
+      - segments
+      - instructions
     - name: units
       tier: extended
       providers: 4
@@ -488,20 +498,6 @@ concepts:
       type: string
       spellings:
       - units
-    - name: costing
-      tier: extended
-      providers: 3
-      share: 0.231
-      type: string
-      spellings:
-      - costing
-    - name: costing_options
-      tier: extended
-      providers: 3
-      share: 0.231
-      type: object
-      spellings:
-      - costing_options
     - name: distance
       tier: extended
       providers: 3
@@ -516,28 +512,13 @@ concepts:
       type: string
       spellings:
       - language
-    - name: legs
+    - name: name
       tier: extended
       providers: 3
       share: 0.231
-      type: array
+      type: string
       spellings:
-      - legs
-      - instructions
-    - name: locations
-      tier: extended
-      providers: 3
-      share: 0.231
-      type: array
-      spellings:
-      - locations
-    - name: metadata
-      tier: extended
-      providers: 3
-      share: 0.231
-      type: object
-      spellings:
-      - metadata
+      - name
     - name: roundabout_exits
       tier: extended
       providers: 3
@@ -545,31 +526,38 @@ concepts:
       type: boolean
       spellings:
       - roundabout_exits
-    long_tail_count: 125
+    long_tail_count: 138
     long_tail_sample:
     - admin_crossings
     - agency
     - alternates
     - avoid
     - banner_instructions
+    - costing
+    - costing_options
     - date_time
     - directions_type
     - elevation_interval
     - exclude_locations
     - exclude_polygons
     - format
+    - latitude
     - linear_cost_factors
     - linear_references
+    - locations
+    - longitude
+    - metadata
     - mode
-    - name
     - prioritize_bidirectional
     - recostings
     - shape_format
+    - summary
     - turn_lanes
     - voice_instructions
     - admin_area_crossings
     - admin_areas
     - agency_url
+    - aircraft_types
     - alerts
     - alternative_routes
     - assigned_at
@@ -580,13 +568,6 @@ concepts:
     - avoid_polygons
     - candidate_devices
     - category
-    - cemv_support
-    - color
-    - completed_at
-    - completion_source
-    - completion_type
-    - continue_straight
-    - continuous_drop_off
   distance_matrix:
     segments_seen:
       matrix: 5
@@ -629,6 +610,13 @@ concepts:
       spellings:
       - sources
       - origins
+    - name: id
+      tier: core
+      providers: 4
+      share: 0.5
+      type: string
+      spellings:
+      - id
     - name: units
       tier: core
       providers: 4
@@ -643,14 +631,7 @@ concepts:
       type: string
       spellings:
       - costing
-    - name: id
-      tier: extended
-      providers: 3
-      share: 0.375
-      type: string
-      spellings:
-      - id
-    long_tail_count: 54
+    long_tail_count: 58
     long_tail_sample:
     - costing_options
     - date_time
@@ -673,10 +654,15 @@ concepts:
     - cop
     - country
     - departure_time
+    - distance_km
+    - distance_miles
+    - duration_seconds
     - error_codes
     - ev
     - exclude
     - forward_mapping
+    - geocode
+    - geometry
     - locations
     - matrix_attributes
     - matrix_id
@@ -687,8 +673,3 @@ concepts:
     - metadata
     - metrics
     - min_distance
-    - min_duration
-    - mode
-    - order_by
-    - origin
-    - pedestrian

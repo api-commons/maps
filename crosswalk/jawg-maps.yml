@@ -25,8 +25,8 @@ concepts:
     - autocomplete
     - place
     properties:
-      id: gid
       name: name
+      id: gid
       geometry: geometry
       address: label
       city: locality
@@ -39,10 +39,7 @@ concepts:
   route:
     path_segment:
     - route
-    properties:
-      costing: costing
-      costing_options: costing_options
-      locations: locations
+    properties: {}
     core_coverage: 0.0
     evidence:
     - openapi/_original/jawg-maps-openapi.yml#POST /routing/route
@@ -53,6 +50,6 @@ concepts:
       destinations: targets
       origins: sources
       costing: costing
-    core_coverage: 0.667
+    core_coverage: 0.5
     evidence:
     - openapi/_original/jawg-maps-openapi.yml#POST /routing/sources_to_targets

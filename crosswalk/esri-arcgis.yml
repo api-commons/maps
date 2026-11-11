@@ -7,8 +7,8 @@ concepts:
     path_segment:
     - places
     properties:
-      id: placeId
       name: name
+      id: placeId
       geometry: location
       address: address
       category: categories

@@ -29,8 +29,8 @@ concepts:
     path_segment:
     - place
     properties:
-      id: gid
       name: name
+      id: gid
       geometry: geometry
       address: label
       city: locality

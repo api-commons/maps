@@ -8,8 +8,8 @@ concepts:
     - nearby
     - pois
     properties:
-      id: id
       name: name
+      id: id
       category:
       - category
       - categories

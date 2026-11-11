@@ -9,10 +9,10 @@ concepts:
     properties:
       id: id
       address: address
-      city: city
-      country: country
       latitude: latitude
       longitude: longitude
+      city: city
+      country: country
       region: state
     core_coverage: 0.5
     evidence:

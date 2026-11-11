@@ -8,8 +8,8 @@ concepts:
     - poi
     - autocomplete
     properties:
-      id: id
       name: name
+      id: id
       geometry: geometry
       distance: distance
     core_coverage: 0.75

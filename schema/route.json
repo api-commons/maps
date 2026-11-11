@@ -38,6 +38,17 @@
         "time"
       ]
     },
+    "legs": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.308,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "legs",
+        "segments",
+        "instructions"
+      ]
+    },
     "units": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -45,24 +56,6 @@
       "x-commons-providers": 4,
       "x-commons-spellings": [
         "units"
-      ]
-    },
-    "costing": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.231,
-      "x-commons-providers": 3,
-      "x-commons-spellings": [
-        "costing"
-      ]
-    },
-    "costing_options": {
-      "type": "object",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.231,
-      "x-commons-providers": 3,
-      "x-commons-spellings": [
-        "costing_options"
       ]
     },
     "distance": {
@@ -83,32 +76,13 @@
         "language"
       ]
     },
-    "legs": {
-      "type": "array",
+    "name": {
+      "type": "string",
       "x-commons-tier": "extended",
       "x-commons-share": 0.231,
       "x-commons-providers": 3,
       "x-commons-spellings": [
-        "legs",
-        "instructions"
-      ]
-    },
-    "locations": {
-      "type": "array",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.231,
-      "x-commons-providers": 3,
-      "x-commons-spellings": [
-        "locations"
-      ]
-    },
-    "metadata": {
-      "type": "object",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.231,
-      "x-commons-providers": 3,
-      "x-commons-spellings": [
-        "metadata"
+        "name"
       ]
     },
     "roundabout_exits": {

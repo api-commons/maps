@@ -6,7 +6,15 @@ concepts:
   place:
     path_segment:
     - places
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      name: title
+      geometry: position
+      address: address
+      category:
+      - types
+      - category
+      latitude: latitude
+      longitude: longitude
+    core_coverage: 0.75
     evidence:
     - openapi/_original/serper-google-search-api-openapi.yml#POST /places

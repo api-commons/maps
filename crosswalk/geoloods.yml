@@ -21,11 +21,11 @@ concepts:
     - nearby
     properties:
       name: Name
+      latitude: Latitude
+      longitude: Longitude
       country:
       - CountryCode
       - CountryName
-      latitude: Latitude
-      longitude: Longitude
     core_coverage: 0.25
     evidence:
     - openapi/_original/geoloods-openapi.json#GET /nearby

@@ -31,8 +31,8 @@ concepts:
     path_segment:
     - places
     properties:
-      id: _id
       name: name
+      id: _id
       geometry: location
       category: categories
     core_coverage: 0.75
@@ -44,8 +44,8 @@ concepts:
     properties:
       geometry: geometry
       duration: duration
-      distance: distance
       legs: legs
+      distance: distance
     core_coverage: 0.0
     evidence:
     - openapi/_original/radar-io-openapi.yml#GET /route/directions
@@ -55,6 +55,6 @@ concepts:
     properties:
       destinations: destinations
       origins: origins
-    core_coverage: 0.667
+    core_coverage: 0.5
     evidence:
     - openapi/_original/radar-io-openapi.yml#GET /route/matrix

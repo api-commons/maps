@@ -8,6 +8,7 @@ concepts:
     - route
     properties:
       id: id
+      name: name
     core_coverage: 0.0
     evidence:
     - openapi/_original/walk-score-transit-openapi.yml#GET /transit/route/{routeId}/

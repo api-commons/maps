@@ -9,7 +9,6 @@ concepts:
     properties:
       duration: duration
       distance: distance
-      metadata: metadata
     core_coverage: 0.0
     evidence:
     - openapi/_original/hypertrack-openapi.yaml#GET /orders/routes/

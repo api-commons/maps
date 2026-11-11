@@ -48,11 +48,13 @@ concepts:
     path_segment:
     - places
     properties:
-      id: place_id
       name: name
+      id: place_id
       geometry: geometry
       address: formatted
       category: categories
+      latitude: lat
+      longitude: lon
       city:
       - city
       - municipality
@@ -61,8 +63,6 @@ concepts:
       country:
       - country
       - country_code
-      latitude: lat
-      longitude: lon
       region:
       - region
       - state
@@ -79,9 +79,9 @@ concepts:
     properties:
       geometry: geometry
       duration: time
+      legs: legs
       units: units
       distance: distance
-      legs: legs
     core_coverage: 0.0
     evidence:
     - openapi/_original/geoapify-routing-openapi.json#GET /routing

@@ -8,7 +8,6 @@ concepts:
     - routes
     properties:
       id: id
-      metadata: metadata
     core_coverage: 0.0
     evidence:
     - openapi/_original/spring-cloud-gateway-actuator-openapi.yml#DELETE /routes/{id}

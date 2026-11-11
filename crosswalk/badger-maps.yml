@@ -12,6 +12,7 @@ concepts:
       - location
       id: id
       duration: duration
+      name: name
     core_coverage: 0.0
     evidence:
     - openapi/_original/badger-maps-openapi.yml#GET /routes/

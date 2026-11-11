@@ -34,7 +34,7 @@ concepts:
     properties:
       destinations: destinations
       origins: origins
-    core_coverage: 0.667
+    core_coverage: 0.5
     evidence:
     - openapi/_original/here-matrix-routing-v8-openapi.yml#GET /matrix/{matrixId}
     - openapi/_original/here-matrix-routing-v8-openapi.yml#POST /matrix
