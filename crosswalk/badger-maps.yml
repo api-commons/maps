@@ -1,0 +1,18 @@
+provider: badger-maps
+apis_io: https://apis.io/providers/badger-maps/
+context: maps
+generated: '2026-11-10'
+concepts:
+  route:
+    path_segment:
+    - routes
+    properties:
+      geometry:
+      - position
+      - location
+      id: id
+      duration: duration
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/badger-maps-openapi.yml#GET /routes/
+    - openapi/_original/badger-maps-openapi.yml#GET /routes/{route_id}/

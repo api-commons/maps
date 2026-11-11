@@ -1,0 +1,254 @@
+openapi: 3.1.0
+info:
+  title: Maps and Geocoding (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Maps and Geocoding interface, distilled from the harvested OpenAPI of 193 providers in
+    the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /geocodes:
+    get:
+      operationId: listGeocodes
+      summary: List geocodes
+      tags:
+      - Geocodes
+      x-commons-tier: core
+      x-commons-share: 0.864
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Geocode'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createGeocode
+      summary: Create a geocode
+      tags:
+      - Geocodes
+      x-commons-tier: extended
+      x-commons-share: 0.227
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /places:
+    get:
+      operationId: listPlaces
+      summary: List places
+      tags:
+      - Places
+      x-commons-tier: core
+      x-commons-share: 0.72
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Place'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createPlace
+      summary: Create a place
+      tags:
+      - Places
+      x-commons-tier: extended
+      x-commons-share: 0.2
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /places/{place_id}:
+    parameters:
+    - $ref: '#/components/parameters/place_id'
+    get:
+      operationId: getPlace
+      summary: Get a place
+      tags:
+      - Places
+      x-commons-tier: extended
+      x-commons-share: 0.32
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /routes:
+    get:
+      operationId: listRoutes
+      summary: List routes
+      tags:
+      - Routes
+      x-commons-tier: core
+      x-commons-share: 0.733
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Route'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createRoute
+      summary: Create a route
+      tags:
+      - Routes
+      x-commons-tier: extended
+      x-commons-share: 0.4
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /routes/{route_id}:
+    parameters:
+    - $ref: '#/components/parameters/route_id'
+    get:
+      operationId: getRoute
+      summary: Get a route
+      tags:
+      - Routes
+      x-commons-tier: core
+      x-commons-share: 0.533
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /distance-matrixes:
+    post:
+      operationId: createDistanceMatrix
+      summary: Create a distance matrix
+      tags:
+      - Distance Matrixes
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id004
+                $ref: '#/components/schemas/DistanceMatrix'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+    get:
+      operationId: listDistanceMatrixes
+      summary: List distance matrixes
+      tags:
+      - Distance Matrixes
+      x-commons-tier: extended
+      x-commons-share: 0.333
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id004
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+components:
+  schemas:
+    Geocode:
+      $ref: ./schema/geocode.json
+    Place:
+      $ref: ./schema/place.json
+    Route:
+      $ref: ./schema/route.json
+    DistanceMatrix:
+      $ref: ./schema/distance_matrix.json
+  parameters:
+    geocode_id:
+      name: geocode_id
+      in: path
+      required: true
+      schema:
+        type: string
+    place_id:
+      name: place_id
+      in: path
+      required: true
+      schema:
+        type: string
+    route_id:
+      name: route_id
+      in: path
+      required: true
+      schema:
+        type: string
+    distance_matrix_id:
+      name: distance_matrix_id
+      in: path
+      required: true
+      schema:
+        type: string

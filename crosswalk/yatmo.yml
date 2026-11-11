@@ -1,0 +1,12 @@
+provider: yatmo
+apis_io: https://apis.io/providers/yatmo/
+context: maps
+generated: '2026-11-10'
+concepts:
+  route:
+    path_segment:
+    - route
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/yatmo-openapi.json#GET /Route

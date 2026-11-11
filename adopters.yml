@@ -1,0 +1,254 @@
+context: maps
+generated: '2026-11-10'
+adopters:
+- provider: 2s-io
+  apis_io: https://apis.io/providers/2s-io/
+  crosswalk: crosswalk/2s-io.yml
+  concepts:
+  - geocode
+- provider: attomdata
+  apis_io: https://apis.io/providers/attomdata/
+  crosswalk: crosswalk/attomdata.yml
+  concepts:
+  - place
+- provider: badger-maps
+  apis_io: https://apis.io/providers/badger-maps/
+  crosswalk: crosswalk/badger-maps.yml
+  concepts:
+  - route
+- provider: cuebiq
+  apis_io: https://apis.io/providers/cuebiq/
+  crosswalk: crosswalk/cuebiq.yml
+  concepts:
+  - place
+- provider: doi
+  apis_io: https://apis.io/providers/doi/
+  crosswalk: crosswalk/doi.yml
+  concepts:
+  - place
+- provider: esri-arcgis
+  apis_io: https://apis.io/providers/esri-arcgis/
+  crosswalk: crosswalk/esri-arcgis.yml
+  concepts:
+  - place
+- provider: flightaware
+  apis_io: https://apis.io/providers/flightaware/
+  crosswalk: crosswalk/flightaware.yml
+  concepts:
+  - place
+  - route
+- provider: foursquare
+  apis_io: https://apis.io/providers/foursquare/
+  crosswalk: crosswalk/foursquare.yml
+  concepts:
+  - place
+- provider: geoapify
+  apis_io: https://apis.io/providers/geoapify/
+  crosswalk: crosswalk/geoapify.yml
+  concepts:
+  - geocode
+  - place
+  - route
+- provider: geocode-earth
+  apis_io: https://apis.io/providers/geocode-earth/
+  crosswalk: crosswalk/geocode-earth.yml
+  concepts:
+  - geocode
+  - place
+- provider: geocodio
+  apis_io: https://apis.io/providers/geocodio/
+  crosswalk: crosswalk/geocodio.yml
+  concepts:
+  - distance_matrix
+  - geocode
+- provider: geoloods
+  apis_io: https://apis.io/providers/geoloods/
+  crosswalk: crosswalk/geoloods.yml
+  concepts:
+  - geocode
+  - place
+- provider: google-maps
+  apis_io: https://apis.io/providers/google-maps/
+  crosswalk: crosswalk/google-maps.yml
+  concepts:
+  - place
+- provider: google-places
+  apis_io: https://apis.io/providers/google-places/
+  crosswalk: crosswalk/google-places.yml
+  concepts:
+  - place
+- provider: groundtruth
+  apis_io: https://apis.io/providers/groundtruth/
+  crosswalk: crosswalk/groundtruth.yml
+  concepts:
+  - place
+- provider: here
+  apis_io: https://apis.io/providers/here/
+  crosswalk: crosswalk/here.yml
+  concepts:
+  - distance_matrix
+  - geocode
+  - route
+- provider: here-technologies
+  apis_io: https://apis.io/providers/here-technologies/
+  crosswalk: crosswalk/here-technologies.yml
+  concepts:
+  - geocode
+- provider: hypertrack
+  apis_io: https://apis.io/providers/hypertrack/
+  crosswalk: crosswalk/hypertrack.yml
+  concepts:
+  - route
+- provider: jawg-maps
+  apis_io: https://apis.io/providers/jawg-maps/
+  crosswalk: crosswalk/jawg-maps.yml
+  concepts:
+  - distance_matrix
+  - geocode
+  - place
+  - route
+- provider: maptiler
+  apis_io: https://apis.io/providers/maptiler/
+  crosswalk: crosswalk/maptiler.yml
+  concepts:
+  - geocode
+- provider: microburbs
+  apis_io: https://apis.io/providers/microburbs/
+  crosswalk: crosswalk/microburbs.yml
+  concepts:
+  - place
+- provider: moodys-rms
+  apis_io: https://apis.io/providers/moodys-rms/
+  crosswalk: crosswalk/moodys-rms.yml
+  concepts:
+  - geocode
+- provider: nominatim
+  apis_io: https://apis.io/providers/nominatim/
+  crosswalk: crosswalk/nominatim.yml
+  concepts:
+  - geocode
+- provider: openchargemap
+  apis_io: https://apis.io/providers/openchargemap/
+  crosswalk: crosswalk/openchargemap.yml
+  concepts:
+  - place
+- provider: openmercantil
+  apis_io: https://apis.io/providers/openmercantil/
+  crosswalk: crosswalk/openmercantil.yml
+  concepts:
+  - geocode
+- provider: openrouteservice
+  apis_io: https://apis.io/providers/openrouteservice/
+  crosswalk: crosswalk/openrouteservice.yml
+  concepts:
+  - distance_matrix
+  - geocode
+  - place
+  - route
+- provider: openstreetmap
+  apis_io: https://apis.io/providers/openstreetmap/
+  crosswalk: crosswalk/openstreetmap.yml
+  concepts:
+  - geocode
+- provider: openweathermap
+  apis_io: https://apis.io/providers/openweathermap/
+  crosswalk: crosswalk/openweathermap.yml
+  concepts:
+  - geocode
+- provider: pelias
+  apis_io: https://apis.io/providers/pelias/
+  crosswalk: crosswalk/pelias.yml
+  concepts:
+  - geocode
+  - place
+- provider: placer
+  apis_io: https://apis.io/providers/placer/
+  crosswalk: crosswalk/placer.yml
+  concepts:
+  - place
+- provider: positionstack
+  apis_io: https://apis.io/providers/positionstack/
+  crosswalk: crosswalk/positionstack.yml
+  concepts:
+  - geocode
+- provider: precisely-apis
+  apis_io: https://apis.io/providers/precisely-apis/
+  crosswalk: crosswalk/precisely-apis.yml
+  concepts:
+  - place
+- provider: radar
+  apis_io: https://apis.io/providers/radar/
+  crosswalk: crosswalk/radar.yml
+  concepts:
+  - distance_matrix
+  - geocode
+  - place
+  - route
+- provider: radar-io
+  apis_io: https://apis.io/providers/radar-io/
+  crosswalk: crosswalk/radar-io.yml
+  concepts:
+  - distance_matrix
+  - geocode
+  - place
+  - route
+- provider: rentberry
+  apis_io: https://apis.io/providers/rentberry/
+  crosswalk: crosswalk/rentberry.yml
+  concepts:
+  - geocode
+  - place
+- provider: serper
+  apis_io: https://apis.io/providers/serper/
+  crosswalk: crosswalk/serper.yml
+  concepts:
+  - place
+- provider: sk-telecom
+  apis_io: https://apis.io/providers/sk-telecom/
+  crosswalk: crosswalk/sk-telecom.yml
+  concepts:
+  - place
+- provider: spring-cloud-gateway
+  apis_io: https://apis.io/providers/spring-cloud-gateway/
+  crosswalk: crosswalk/spring-cloud-gateway.yml
+  concepts:
+  - route
+- provider: stadia-maps
+  apis_io: https://apis.io/providers/stadia-maps/
+  crosswalk: crosswalk/stadia-maps.yml
+  concepts:
+  - geocode
+  - place
+- provider: transitland
+  apis_io: https://apis.io/providers/transitland/
+  crosswalk: crosswalk/transitland.yml
+  concepts:
+  - distance_matrix
+  - route
+- provider: trimble
+  apis_io: https://apis.io/providers/trimble/
+  crosswalk: crosswalk/trimble.yml
+  concepts:
+  - geocode
+  - route
+- provider: university-of-minnesota
+  apis_io: https://apis.io/providers/university-of-minnesota/
+  crosswalk: crosswalk/university-of-minnesota.yml
+  concepts:
+  - distance_matrix
+- provider: valhalla
+  apis_io: https://apis.io/providers/valhalla/
+  crosswalk: crosswalk/valhalla.yml
+  concepts:
+  - distance_matrix
+  - route
+- provider: walk-score
+  apis_io: https://apis.io/providers/walk-score/
+  crosswalk: crosswalk/walk-score.yml
+  concepts:
+  - route
+- provider: yatmo
+  apis_io: https://apis.io/providers/yatmo/
+  crosswalk: crosswalk/yatmo.yml
+  concepts:
+  - route

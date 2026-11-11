@@ -1,0 +1,60 @@
+provider: radar-io
+apis_io: https://apis.io/providers/radar-io/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - forward
+    - reverse
+    properties:
+      address:
+      - addressLabel
+      - formattedAddress
+      country:
+      - country
+      - countryCode
+      confidence: confidence
+      geometry: geometry
+      latitude: latitude
+      longitude: longitude
+      region: state
+      type: layer
+      city: city
+      street: street
+      postal_code: postalCode
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/radar-io-openapi.yml#GET /geocode/forward
+    - openapi/_original/radar-io-openapi.yml#GET /geocode/reverse
+  place:
+    path_segment:
+    - places
+    properties:
+      id: _id
+      name: name
+      geometry: location
+      category: categories
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/radar-io-openapi.yml#GET /search/places
+  route:
+    path_segment:
+    - directions
+    properties:
+      geometry: geometry
+      duration: duration
+      distance: distance
+      legs: legs
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/radar-io-openapi.yml#GET /route/directions
+  distance_matrix:
+    path_segment:
+    - matrix
+    properties:
+      destinations: destinations
+      origins: origins
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/radar-io-openapi.yml#GET /route/matrix

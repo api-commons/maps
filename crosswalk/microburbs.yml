@@ -1,0 +1,24 @@
+provider: microburbs
+apis_io: https://apis.io/providers/microburbs/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - nearby
+    - pois
+    properties:
+      id: id
+      name: name
+      category:
+      - category
+      - categories
+      latitude: lat
+      longitude: lng
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/microburbs-openapi.json#GET /v1/properties/{gnaf_id}/amenities/nearby
+    - openapi/_original/microburbs-openapi.json#GET /v1/properties/{gnaf_id}/schools/nearby
+    - openapi/_original/microburbs-openapi.json#GET /v1/properties/{gnaf_id}/transport/nearby
+    - openapi/_original/microburbs-openapi.json#GET /v1/suburbs/{suburb_name}/lifestyle/pois
+    - openapi/_original/microburbs-openapi.json#GET /v1/suburbs/{suburb_name}/schools/nearby

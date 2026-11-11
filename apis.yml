@@ -1,0 +1,54 @@
+aid: common-maps
+name: Maps and Geocoding
+type: Common
+description: 'The common Maps and Geocoding vocabulary, distilled from the harvested OpenAPI of 193 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Geocoding
+- Mapping
+- Maps
+- GIS
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/maps/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-maps:maps
+  name: Common Maps and Geocoding Interface
+  description: The Maps and Geocoding interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/maps
+  tags:
+  - Geocoding
+  - Mapping
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/maps/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/maps/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/maps/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: geocode
+    url: https://raw.githubusercontent.com/api-commons/maps/main/schema/geocode.json
+  - type: JSONSchema
+    name: place
+    url: https://raw.githubusercontent.com/api-commons/maps/main/schema/place.json
+  - type: JSONSchema
+    name: route
+    url: https://raw.githubusercontent.com/api-commons/maps/main/schema/route.json
+  - type: JSONSchema
+    name: distance_matrix
+    url: https://raw.githubusercontent.com/api-commons/maps/main/schema/distance_matrix.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/maps/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

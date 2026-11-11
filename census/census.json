@@ -1,0 +1,3875 @@
+{
+ "cohort_size": 193,
+ "unreadable": [],
+ "concepts": {
+  "geocode": {
+   "2s-io": {
+    "segments": [
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "formattedAddress": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "boundingBox": "array",
+     "class": "string",
+     "type": "string",
+     "importance": "number",
+     "address": "object"
+    },
+    "evidence": [
+     "openapi/_original/2s-io-openapi.json#GET /api/geocode/reverse"
+    ]
+   },
+   "apifreaks-api-hub-for-developers": {
+    "segments": [
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "totalRecords": "integer",
+     "totalPages": "integer",
+     "currentPage": "integer",
+     "reverseDnsRecords": "array",
+     "lat": "number",
+     "lon": "number",
+     "name": "string",
+     "category": "string",
+     "type": "string",
+     "poi": "array",
+     "street": "string",
+     "area": "string",
+     "postcode": "string",
+     "city": "string",
+     "county": "string",
+     "state_code": "string",
+     "state": "string",
+     "country_code": "string",
+     "country": "string",
+     "full_address": "string",
+     "bounding_box": "array",
+     "total_Result": "integer",
+     "total_Pages": "integer",
+     "current_Page": "integer",
+     "whois_domains_historical": "array"
+    },
+    "evidence": [
+     "openapi/_original/apifreaks-api-hub-for-developers-reverse-dns-lookup-openapi.json#GET /domain/dns/reverse",
+     "openapi/_original/apifreaks-api-hub-for-developers-reverse-geocoding-openapi.json#GET /geocoder/reverse",
+     "openapi/_original/apifreaks-api-hub-for-developers-reverse-whois-openapi.json#GET /domain/whois/reverse"
+    ]
+   },
+   "geoapify": {
+    "segments": [
+     "search",
+     "reverse",
+     "autocomplete"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "continent": "string",
+     "country": "string",
+     "country_code": "string",
+     "region": "string",
+     "state": "string",
+     "state_code": "string",
+     "state_COG": "string",
+     "department_COG": "string",
+     "state_district": "string",
+     "province": "string",
+     "department": "string",
+     "arrondissement": "string",
+     "county": "string",
+     "county_code": "string",
+     "county_district": "string",
+     "city": "string",
+     "city_district": "string",
+     "postcode": "string",
+     "postal_code": "string",
+     "openGeoDB:postal_codes": "string",
+     "district": "string",
+     "suburb": "string",
+     "municipality": "string",
+     "commune": "string",
+     "subdistrict": "string",
+     "city_block": "string",
+     "neighbourhood": "string",
+     "quarter": "string",
+     "section": "string",
+     "sector": "string",
+     "subdivision": "string",
+     "croft": "string",
+     "allotments": "string",
+     "residental": "string",
+     "farm": "string",
+     "farmyard": "string",
+     "industrial": "string",
+     "commercial": "string",
+     "retail": "string",
+     "borough": "string",
+     "town": "string",
+     "township": "string",
+     "village": "string",
+     "hamlet": "string",
+     "locality": "string",
+     "isolated_dwelling": "string",
+     "street": "string",
+     "road": "string",
+     "footway": "string",
+     "pedestrian": "string",
+     "path": "string",
+     "housenumber": "string",
+     "house_number": "string",
+     "house_name": "string",
+     "old_name": "string",
+     "other": "string",
+     "formatted": "string",
+     "address_line1": "string",
+     "address_line2": "string",
+     "unlocode": "string",
+     "iso3166_2": "string",
+     "iso3166_2_sublevel": "string",
+     "iso3166_sublevel": "string",
+     "plus_code": "string",
+     "plus_code_short": "string",
+     "postcodes": "array",
+     "other_names": "object",
+     "population": "number",
+     "lon": "number",
+     "lat": "number",
+     "parent_as_place_id": "boolean",
+     "timezone": "object",
+     "NUTS_3": "string",
+     "result_type": "string",
+     "distance": "number",
+     "datasource": "object",
+     "rank": "object",
+     "category": "string",
+     "categories": "array",
+     "place_id": "string",
+     "bbox": "object",
+     "geometry": "object",
+     "text": "string",
+     "parsed": "object",
+     "query": "object"
+    },
+    "evidence": [
+     "openapi/_original/geoapify-address-autocomplete-openapi.json#GET /geocode/autocomplete",
+     "openapi/_original/geoapify-batch-openapi.json#GET /batch/geocode/reverse",
+     "openapi/_original/geoapify-batch-openapi.json#GET /batch/geocode/search",
+     "openapi/_original/geoapify-batch-openapi.json#POST /batch/geocode/reverse",
+     "openapi/_original/geoapify-batch-openapi.json#POST /batch/geocode/search",
+     "openapi/_original/geoapify-forward-geocoding-api-openapi.yml#GET /geocode/search",
+     "openapi/_original/geoapify-forward-geocoding-openapi.json#GET /geocode/search",
+     "openapi/_original/geoapify-reverse-geocoding-openapi.json#GET /geocode/reverse"
+    ]
+   },
+   "geocode-earth": {
+    "segments": [
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "gid": "string",
+     "layer": "string",
+     "source": "string",
+     "source_id": "string",
+     "country_code": "string",
+     "name": "string",
+     "confidence": "number",
+     "match_type": "string",
+     "accuracy": "string",
+     "country": "string",
+     "country_gid": "string",
+     "region": "string",
+     "region_gid": "string",
+     "locality": "string",
+     "locality_gid": "string",
+     "postalcode": "string",
+     "street": "string",
+     "housenumber": "string",
+     "label": "string",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/geocode-earth-openapi.yml#GET /reverse"
+    ]
+   },
+   "geocodio": {
+    "segments": [
+     "geocode",
+     "reverse"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "stable_address_key": "string",
+     "address_components": "object",
+     "address_lines": "array",
+     "formatted_address": "string",
+     "location": "object",
+     "accuracy": "number",
+     "accuracy_type": "string",
+     "match_type": "string",
+     "source": "string",
+     "fields": "object",
+     "destinations": "array",
+     "_warnings": "array",
+     "query": "string",
+     "response": "object"
+    },
+    "evidence": [
+     "openapi/_original/geocodio-openapi.json#GET /geocode",
+     "openapi/_original/geocodio-openapi.json#GET /reverse",
+     "openapi/_original/geocodio-openapi.json#POST /geocode",
+     "openapi/_original/geocodio-openapi.json#POST /reverse"
+    ]
+   },
+   "geoloods": {
+    "segments": [
+     "geocode"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "Geonameid": "integer",
+     "Name": "string",
+     "Latitude": "number",
+     "Longitude": "number",
+     "CountryCode": "string",
+     "CountryName": "string",
+     "Timezone": "string"
+    },
+    "evidence": [
+     "openapi/_original/geoloods-openapi.json#GET /geocode"
+    ]
+   },
+   "here": {
+    "segments": [
+     "geocode"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "title": "string",
+     "id": "string",
+     "politicalView": "string",
+     "resultType": "string",
+     "houseNumberType": "string",
+     "addressUsage": null,
+     "addressBlockType": "string",
+     "localityType": "string",
+     "administrativeAreaType": "string",
+     "address": null,
+     "postalCodeDetails": "array",
+     "position": null,
+     "access": "array",
+     "distance": "integer",
+     "mapView": null,
+     "categories": "array",
+     "foodTypes": "array",
+     "houseNumberFallback": "boolean",
+     "estimatedPointAddress": "boolean",
+     "timeZone": null,
+     "scoring": null,
+     "parsing": null,
+     "streetInfo": "array",
+     "countryInfo": null,
+     "translations": null,
+     "mapReferences": null,
+     "related": "array",
+     "navigationAttributes": null,
+     "secondaryUnitInfo": "array"
+    },
+    "evidence": [
+     "openapi/_original/here-geocoding-and-search-v7-openapi.json#GET /geocode",
+     "openapi/_original/here-geocoding-and-search-v7-openapi_2.json#GET /geocode"
+    ]
+   },
+   "here-technologies": {
+    "segments": [
+     "geocode"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "title": "string",
+     "id": "string",
+     "address": "object",
+     "position": "object"
+    },
+    "evidence": [
+     "openapi/_original/here-technologies-openapi.yml#GET /geocode"
+    ]
+   },
+   "jawg-maps": {
+    "segments": [
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "gid": "string",
+     "layer": "string",
+     "source": "string",
+     "name": "string",
+     "label": "string",
+     "confidence": "number",
+     "country": "string",
+     "region": "string",
+     "locality": "string",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/jawg-maps-openapi.yml#GET /places/v1/reverse"
+    ]
+   },
+   "maptiler": {
+    "segments": [
+     "geocoding"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "text": "string",
+     "language": "string",
+     "ref": "string",
+     "country_code": "string",
+     "kind": "string",
+     "categories": "array",
+     "feature_tags": "object",
+     "place_designation": "string",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/maptiler-maptiler-openapi.yml#GET /geocoding/{id}.json",
+     "openapi/_original/maptiler-maptiler-openapi.yml#GET /geocoding/{longitude},{latitude}.json",
+     "openapi/_original/maptiler-maptiler-openapi.yml#GET /geocoding/{queries}.json",
+     "openapi/_original/maptiler-maptiler-openapi.yml#GET /geocoding/{query}.json"
+    ]
+   },
+   "moodys-rms": {
+    "segments": [
+     "geocode"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "addressId": "integer",
+     "area": "object",
+     "buildingId": "string",
+     "buildingName": "string",
+     "addressType": "object",
+     "country": "object",
+     "countryScheme": "string",
+     "countryGeoId": "integer",
+     "countryRmsCode": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "addressText": "string",
+     "streetAddress": "string",
+     "cityCode": "string",
+     "cityName": "string",
+     "cityGeoId": "integer",
+     "postalCode": "string",
+     "postalGeoId": "integer",
+     "block": "string",
+     "blockGroup": "string",
+     "locationCode": "string",
+     "locationCodeGeoId": "integer",
+     "parcelNumber": "string",
+     "subLocality": "string",
+     "geoResolutionConfidence": "number",
+     "geoAccuracyBuffer": "number",
+     "geoProductVersion": "string",
+     "geoLocationCode": "string",
+     "geoMatchCode": "string",
+     "geoDataSourceId": "integer",
+     "geoResolutionCode": "object",
+     "geoDataSourceVersionId": "integer",
+     "geoDateTime": "string",
+     "createDateTime": "string",
+     "updateDateTime": "string",
+     "admin1Code": "string",
+     "admin1GeoId": "integer",
+     "admin1Name": "string",
+     "admin2Code": "string",
+     "admin2GeoId": "integer",
+     "admin2Name": "string",
+     "admin3Code": "string",
+     "admin3GeoId": "integer",
+     "admin3Name": "string",
+     "admin4Code": "string",
+     "admin4GeoId": "integer",
+     "admin4Name": "string",
+     "admin5Code": "string",
+     "admin5GeoId": "integer",
+     "admin5Name": "string",
+     "zone1GeoId": "integer",
+     "zone2GeoId": "integer",
+     "zone3GeoId": "integer",
+     "zone4GeoId": "integer",
+     "zone5GeoId": "integer",
+     "zone1": "string",
+     "zone2": "string",
+     "zone3": "string",
+     "zone3Name": "string",
+     "zone4Name": "string",
+     "zone5Name": "string",
+     "zone3Code": "string",
+     "zone4Code": "string",
+     "zone5Code": "string",
+     "ugid": "string",
+     "name": "string",
+     "type": "string",
+     "engineType": "string",
+     "version": "string",
+     "layerOptions": "object"
+    },
+    "evidence": [
+     "openapi/_original/moodys-rms-risk-modeler-openapi.yml#POST /v1/locations/geocode",
+     "openapi/_original/moodys-rms-risk-modeler-openapi.yml#POST /v1/locations/{id}/geocode"
+    ]
+   },
+   "nominatim": {
+    "segments": [
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "place_id": "integer",
+     "licence": "string",
+     "osm_type": "string",
+     "osm_id": "integer",
+     "boundingbox": "array",
+     "lat": "string",
+     "lon": "string",
+     "display_name": "string",
+     "class": "string",
+     "category": "string",
+     "type": "string",
+     "place_rank": "integer",
+     "importance": "number",
+     "addresstype": "string",
+     "name": "string",
+     "icon": "string",
+     "address": "object",
+     "extratags": "object",
+     "namedetails": "object",
+     "geojson": "object"
+    },
+    "evidence": [
+     "openapi/_original/nominatim-openapi.yml#GET /reverse"
+    ]
+   },
+   "openmercantil": {
+    "segments": [
+     "geocode"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "lat": "number",
+     "lng": "number",
+     "address": "string",
+     "source": "string"
+    },
+    "evidence": [
+     "openapi/_original/openmercantil-openapi-1.9.3.json#GET /api/v1/company/{slug}/geocode",
+     "openapi/_original/openmercantil-openapi.yml#GET /api/v1/company/{slug}/geocode"
+    ]
+   },
+   "openrouteservice": {
+    "segments": [
+     "search",
+     "reverse",
+     "autocomplete"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "gid": "string",
+     "layer": "string",
+     "source": "string",
+     "source_id": "string",
+     "name": "string",
+     "confidence": "number",
+     "match_type": "string",
+     "accuracy": "string",
+     "country": "string",
+     "country_gid": "string",
+     "country_a": "string",
+     "region": "string",
+     "region_gid": "string",
+     "locality": "string",
+     "locality_gid": "string",
+     "postalcode": "string",
+     "label": "string",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/openrouteservice-openapi.yml#GET /geocode/autocomplete",
+     "openapi/_original/openrouteservice-openapi.yml#GET /geocode/reverse",
+     "openapi/_original/openrouteservice-openapi.yml#GET /geocode/search"
+    ]
+   },
+   "openstreetmap": {
+    "segments": [
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "place_id": "integer",
+     "licence": "string",
+     "osm_type": "string",
+     "osm_id": "integer",
+     "lat": "string",
+     "lon": "string",
+     "display_name": "string",
+     "class": "string",
+     "type": "string",
+     "importance": "number",
+     "icon": "string",
+     "address": "object",
+     "boundingbox": "array",
+     "extratags": "object",
+     "namedetails": "object",
+     "error": "string"
+    },
+    "evidence": [
+     "openapi/_original/openstreetmap-nominatim-openapi.yml#GET /reverse"
+    ]
+   },
+   "openweathermap": {
+    "segments": [
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "local_names": "object",
+     "lat": "number",
+     "lon": "number",
+     "country": "string",
+     "state": "string"
+    },
+    "evidence": [
+     "openapi/_original/openweathermap-geocoding-openapi.yml#GET /reverse"
+    ]
+   },
+   "pelias": {
+    "segments": [
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "gid": "string",
+     "layer": "string",
+     "source": "string",
+     "source_id": "string",
+     "name": "string",
+     "label": "string",
+     "confidence": "number",
+     "distance": "number",
+     "country": "string",
+     "country_gid": "string",
+     "country_a": "string",
+     "macroregion": "string",
+     "macroregion_gid": "string",
+     "region": "string",
+     "region_gid": "string",
+     "region_a": "string",
+     "county": "string",
+     "county_gid": "string",
+     "localadmin": "string",
+     "localadmin_gid": "string",
+     "locality": "string",
+     "locality_gid": "string",
+     "borough": "string",
+     "borough_gid": "string",
+     "neighbourhood": "string",
+     "neighbourhood_gid": "string",
+     "postalcode": "string",
+     "housenumber": "string",
+     "street": "string",
+     "categories": "array",
+     "addendum": "object",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /reverse"
+    ]
+   },
+   "positionstack": {
+    "segments": [
+     "forward",
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "latitude": "number",
+     "longitude": "number",
+     "type": "string",
+     "name": "string",
+     "number": "string",
+     "postal_code": "string",
+     "street": "string",
+     "confidence": "number",
+     "region": "string",
+     "region_code": "string",
+     "county": "string",
+     "locality": "string",
+     "administrative_area": "string",
+     "neighbourhood": "string",
+     "country": "string",
+     "country_code": "string",
+     "continent": "string",
+     "label": "string",
+     "map_url": "string",
+     "distance": "number",
+     "bbox_module": "array",
+     "country_module": "object",
+     "timezone_module": "object",
+     "sun_module": "object"
+    },
+    "evidence": [
+     "openapi/_original/positionstack-openapi.yml#GET /forward",
+     "openapi/_original/positionstack-openapi.yml#GET /reverse"
+    ]
+   },
+   "radar": {
+    "segments": [
+     "forward",
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/radar-openapi.yml#GET /geocode/forward",
+     "openapi/_original/radar-openapi.yml#GET /geocode/reverse"
+    ]
+   },
+   "radar-io": {
+    "segments": [
+     "forward",
+     "reverse"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "latitude": "number",
+     "longitude": "number",
+     "geometry": "object",
+     "country": "string",
+     "countryCode": "string",
+     "state": "string",
+     "stateCode": "string",
+     "city": "string",
+     "postalCode": "string",
+     "number": "string",
+     "street": "string",
+     "addressLabel": "string",
+     "formattedAddress": "string",
+     "layer": "string",
+     "confidence": "string"
+    },
+    "evidence": [
+     "openapi/_original/radar-io-openapi.yml#GET /geocode/forward",
+     "openapi/_original/radar-io-openapi.yml#GET /geocode/reverse"
+    ]
+   },
+   "rentberry": {
+    "segments": [
+     "geocode"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "placeType": "string",
+     "placeAddress": "string",
+     "formattedAddressForUsa": "string",
+     "location": "object",
+     "formattedAddress": "string"
+    },
+    "evidence": [
+     "openapi/_original/rentberry-openapi.json#POST /v{version}/place/geocode",
+     "openapi/_original/rentberry-openapi.yml#POST /v{version}/place/geocode"
+    ]
+   },
+   "stadia-maps": {
+    "segments": [
+     "search",
+     "reverse"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "gid": "string",
+     "source_id": "string",
+     "label": "string",
+     "layer": "string",
+     "name": "string",
+     "accuracy": "string",
+     "addendum": "object",
+     "continent": "string",
+     "continent_gid": "string",
+     "country": "string",
+     "country_gid": "string",
+     "neighbourhood": "string",
+     "neighbourhood_gid": "string",
+     "borough": "string",
+     "borough_gid": "string",
+     "postalcode": "string",
+     "street": "string",
+     "housenumber": "string",
+     "locality": "string",
+     "locality_gid": "string",
+     "county": "string",
+     "region": "string",
+     "region_a": "string",
+     "geometry": "object",
+     "status": "integer",
+     "response": "object",
+     "msg": "string",
+     "endpoint": "string",
+     "query": null
+    },
+    "evidence": [
+     "openapi/_original/stadia-maps-openapi.yml#GET /geocoding/v1/reverse",
+     "openapi/_original/stadia-maps-openapi.yml#GET /geocoding/v1/search",
+     "openapi/_original/stadia-maps-openapi.yml#POST /geocoding/v1/search/bulk"
+    ]
+   },
+   "trimble": {
+    "segments": [
+     "geocode"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "Lat": "number",
+     "Lon": "number",
+     "Address": "string",
+     "City": "string",
+     "State": "string",
+     "Zip": "string",
+     "Country": "string",
+     "Quality": "string"
+    },
+    "evidence": [
+     "openapi/_original/trimble-maps-openapi.yml#GET /Service.svc/geocode"
+    ]
+   }
+  },
+  "place": {
+   "2s-io": {
+    "segments": [
+     "nearby"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "lat": "number",
+     "lon": "number",
+     "radiusKm": "number",
+     "airports": "object",
+     "schools": "object",
+     "climateStations": "object",
+     "quakes": "object",
+     "sources": "array"
+    },
+    "evidence": [
+     "openapi/_original/2s-io-openapi.json#GET /api/geo/nearby"
+    ]
+   },
+   "attomdata": {
+    "segments": [
+     "poi"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "object",
+     "response": "object"
+    },
+    "evidence": [
+     "openapi/_original/attom-poi-api-openapi.yml#GET /v4/neighborhood/poi"
+    ]
+   },
+   "cuebiq": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "address": "string",
+     "city": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "radiusMeters": "number"
+    },
+    "evidence": [
+     "openapi/_original/cuebiq-openapi.json#GET /v1/customers/{customerId}/geosets/{geosetId}/places"
+    ]
+   },
+   "doi": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "latLong": "string",
+     "longitude": "string",
+     "geometryPoiId": "string",
+     "id": "string",
+     "latitude": "string",
+     "listingDescription": "string",
+     "relatedParks": "array",
+     "title": "string",
+     "url": "string",
+     "images": "array",
+     "amenities": "array",
+     "quickFacts": "array",
+     "npmapId": "string",
+     "tags": "array",
+     "relatedOrganizations": "array",
+     "audioDescription": "string",
+     "associatedIcon": "string",
+     "credit": "string",
+     "isMapPinHidden": "string",
+     "isPassportStampLocation": "string",
+     "location": "string",
+     "locationDescription": "string",
+     "passportStampImages": "array",
+     "passportStampLocationDescription": "string",
+     "relevanceScore": "number",
+     "managedByUrl": "string",
+     "isOpenToPublic": "string",
+     "isManagedByNps": "string",
+     "managedByOrg": "string",
+     "bodyText": "string",
+     "multimedia": "array"
+    },
+    "evidence": [
+     "openapi/_original/doi-openapi.json#GET /places"
+    ]
+   },
+   "esri-arcgis": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "placeId": "string",
+     "name": "string",
+     "location": "object",
+     "categories": "array",
+     "address": "object",
+     "contactInfo": "object",
+     "hours": "object"
+    },
+    "evidence": [
+     "openapi/_original/esri-arcgis-platform-openapi.yml#GET /places/{placeId}"
+    ]
+   },
+   "flightaware": {
+    "segments": [
+     "nearby"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "links": "object",
+     "num_pages": "integer",
+     "airports": "array"
+    },
+    "evidence": [
+     "openapi/_original/flightaware-openapi.yml#GET /airports/nearby",
+     "openapi/_original/flightaware-openapi.yml#GET /airports/{id}/nearby"
+    ]
+   },
+   "foursquare": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "fsq_place_id": "string",
+     "name": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "location": "object",
+     "categories": "array",
+     "chains": "array",
+     "distance": "integer",
+     "rating": "number",
+     "price": "integer",
+     "popularity": "number",
+     "verified": "boolean",
+     "date_closed": "string",
+     "tel": "string",
+     "email": "string",
+     "website": "string",
+     "social_media": "object",
+     "hours": "object",
+     "attributes": "object",
+     "tastes": "array",
+     "stats": "object",
+     "photos": "array",
+     "tips": "array"
+    },
+    "evidence": [
+     "openapi/_original/foursquare-places-openapi.yml#GET /places/{fsq_place_id}"
+    ]
+   },
+   "geoapify": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "continent": "string",
+     "country": "string",
+     "country_code": "string",
+     "region": "string",
+     "state": "string",
+     "state_code": "string",
+     "state_COG": "string",
+     "department_COG": "string",
+     "state_district": "string",
+     "province": "string",
+     "department": "string",
+     "arrondissement": "string",
+     "county": "string",
+     "county_code": "string",
+     "county_district": "string",
+     "city": "string",
+     "city_district": "string",
+     "postcode": "string",
+     "postal_code": "string",
+     "openGeoDB:postal_codes": "string",
+     "district": "string",
+     "suburb": "string",
+     "municipality": "string",
+     "commune": "string",
+     "subdistrict": "string",
+     "city_block": "string",
+     "neighbourhood": "string",
+     "quarter": "string",
+     "section": "string",
+     "sector": "string",
+     "subdivision": "string",
+     "croft": "string",
+     "allotments": "string",
+     "residental": "string",
+     "farm": "string",
+     "farmyard": "string",
+     "industrial": "string",
+     "retail": "string",
+     "borough": "string",
+     "town": "string",
+     "township": "string",
+     "village": "string",
+     "hamlet": "string",
+     "locality": "string",
+     "isolated_dwelling": "string",
+     "street": "string",
+     "road": "string",
+     "footway": "string",
+     "pedestrian": "string",
+     "path": "string",
+     "housenumber": "string",
+     "house_number": "string",
+     "house_name": "string",
+     "old_name": "string",
+     "other": "string",
+     "formatted": "string",
+     "address_line1": "string",
+     "address_line2": "string",
+     "unlocode": "string",
+     "iso3166_2": "string",
+     "iso3166_2_sublevel": "string",
+     "iso3166_sublevel": "string",
+     "plus_code": "string",
+     "plus_code_short": "string",
+     "postcodes": "array",
+     "other_names": "object",
+     "lon": "number",
+     "lat": "number",
+     "parent_as_place_id": "boolean",
+     "timezone": "object",
+     "population": null,
+     "distance": "number",
+     "categories": "array",
+     "details": "array",
+     "datasource": "object",
+     "mappedTo": "object",
+     "place_id": "string",
+     "website": "string",
+     "opening_hours": "string",
+     "opening_hours_covid19": "string",
+     "brand": "string",
+     "operator": "string",
+     "branch": "string",
+     "network": "string",
+     "owner": "string",
+     "description": "string",
+     "craft": "string",
+     "ref": "string",
+     "int_ref": "string",
+     "ele": "string",
+     "color": "string",
+     "water_source": "string",
+     "website_other": "array",
+     "website_international": "object",
+     "description_international": "object",
+     "name_international": "object",
+     "cuisine_international": "object",
+     "ref_other": "object",
+     "disused": "boolean",
+     "commercial": null,
+     "payment_options": "object",
+     "recycling_options": "object",
+     "fuel_options": "object",
+     "targeted_for": "object",
+     "socket_options": "object",
+     "brand_details": "object",
+     "operator_details": "object",
+     "network_details": "object",
+     "owner_details": "object",
+     "name_other": "object",
+     "contact": "object",
+     "facilities": "object",
+     "wiki_and_media": "object",
+     "historic": "object",
+     "heritage": "object",
+     "artwork": "object",
+     "accommodation": "object",
+     "catering": "object",
+     "parking": "object",
+     "airport": "object",
+     "power": "object",
+     "way": "object",
+     "building": "object",
+     "place_of_worship": "object",
+     "fire_hydrant": "object",
+     "defibrilator": "object",
+     "restrictions": "object",
+     "production": "object",
+     "geometry": "object",
+     "conditions": "array",
+     "filter": null,
+     "bias": null,
+     "limit": "integer",
+     "offset": "integer",
+     "lang": "string"
+    },
+    "evidence": [
+     "openapi/_original/geoapify-places-openapi.json#GET /places",
+     "openapi/_original/geoapify-places-openapi.json#POST /places"
+    ]
+   },
+   "geocode-earth": {
+    "segments": [
+     "place"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "gid": "string",
+     "layer": "string",
+     "source": "string",
+     "source_id": "string",
+     "country_code": "string",
+     "name": "string",
+     "confidence": "number",
+     "match_type": "string",
+     "accuracy": "string",
+     "country": "string",
+     "country_gid": "string",
+     "region": "string",
+     "region_gid": "string",
+     "locality": "string",
+     "locality_gid": "string",
+     "postalcode": "string",
+     "street": "string",
+     "housenumber": "string",
+     "label": "string",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/geocode-earth-openapi.yml#GET /place"
+    ]
+   },
+   "geoloods": {
+    "segments": [
+     "nearby"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "Geonameid": "integer",
+     "Name": "string",
+     "Latitude": "number",
+     "Longitude": "number",
+     "CountryCode": "string",
+     "CountryName": "string",
+     "Timezone": "string"
+    },
+    "evidence": [
+     "openapi/_original/geoloods-openapi.json#GET /nearby"
+    ]
+   },
+   "google-maps": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "name": "string",
+     "id": "string",
+     "displayName": "object",
+     "types": "array",
+     "primaryType": "string",
+     "primaryTypeDisplayName": "object",
+     "nationalPhoneNumber": "string",
+     "internationalPhoneNumber": "string",
+     "formattedAddress": "string",
+     "shortFormattedAddress": "string",
+     "addressComponents": "array",
+     "location": "object",
+     "viewport": "object",
+     "rating": "number",
+     "userRatingCount": "integer",
+     "googleMapsUri": "string",
+     "websiteUri": "string",
+     "regularOpeningHours": "object",
+     "currentOpeningHours": "object",
+     "priceLevel": "string",
+     "businessStatus": "string",
+     "utcOffsetMinutes": "integer",
+     "reviews": "array",
+     "photos": "array",
+     "editorialSummary": "object",
+     "adrFormatAddress": "string",
+     "iconMaskBaseUri": "string",
+     "iconBackgroundColor": "string",
+     "plusCode": "object",
+     "accessibilityOptions": "object",
+     "parkingOptions": "object",
+     "paymentOptions": "object",
+     "dineIn": "boolean",
+     "takeout": "boolean",
+     "delivery": "boolean",
+     "curbsidePickup": "boolean",
+     "reservable": "boolean",
+     "servesBreakfast": "boolean",
+     "servesLunch": "boolean",
+     "servesDinner": "boolean",
+     "servesBeer": "boolean",
+     "servesWine": "boolean",
+     "servesVegetarianFood": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/google-maps-places-api.yml#GET /places/{placeId}"
+    ]
+   },
+   "google-places": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "name": "string",
+     "id": "string",
+     "displayName": "object",
+     "types": "array",
+     "primaryType": "string",
+     "formattedAddress": "string",
+     "shortFormattedAddress": "string",
+     "location": "object",
+     "rating": "number",
+     "userRatingCount": "integer",
+     "priceLevel": "string",
+     "businessStatus": "string",
+     "nationalPhoneNumber": "string",
+     "internationalPhoneNumber": "string",
+     "websiteUri": "string",
+     "googleMapsUri": "string",
+     "regularOpeningHours": "object",
+     "photos": "array",
+     "reviews": "array"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /places/{placeId}"
+    ]
+   },
+   "groundtruth": {
+    "segments": [
+     "pois"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "total_count": "integer",
+     "limit": "integer",
+     "page_num": "integer",
+     "total_pages": "integer",
+     "has_next_page": "boolean",
+     "has_prev_page": "boolean",
+     "pois": "array",
+     "location_group": "object",
+     "counts": "object",
+     "status": "object",
+     "total": "integer",
+     "sub_status": "object",
+     "sources": null,
+     "addresses": "array",
+     "viewshed_coordinates": "array",
+     "success": "boolean",
+     "id": "integer",
+     "company_name": "string",
+     "address": "string",
+     "city": "string",
+     "state": "string",
+     "country": "string",
+     "zipcode": "string",
+     "latitude": "number",
+     "longitude": "number",
+     "category_name": null,
+     "brand_id": null,
+     "brand_name": null,
+     "radius": "number",
+     "in_store_polygon": null,
+     "on_lot_polygon": null,
+     "block_polygon": null,
+     "poi_id": "integer",
+     "brand_ids": "array",
+     "category_ids": "array",
+     "location_group_ids": "array",
+     "poi_ids": "array",
+     "states": "array",
+     "cities": "array",
+     "dma_ids": "array",
+     "zipcodes": "array",
+     "city_state_pairs": "array",
+     "exclude_pois": "array",
+     "viewshed_pois": "array",
+     "search_text": "string"
+    },
+    "evidence": [
+     "openapi/_original/groundtruth-openapi.json#DELETE /location_groups/{location_group_id}/pois",
+     "openapi/_original/groundtruth-openapi.json#GET /location_groups/{location_group_id}/pois",
+     "openapi/_original/groundtruth-openapi.json#GET /pois/{poi_id}",
+     "openapi/_original/groundtruth-openapi.json#POST /location_groups/{location_group_id}/pois",
+     "openapi/_original/groundtruth-openapi.json#POST /search/location_groups/pois",
+     "openapi/_original/groundtruth-openapi.json#POST /search/location_groups/sources/pois"
+    ]
+   },
+   "jawg-maps": {
+    "segments": [
+     "autocomplete",
+     "place"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "gid": "string",
+     "layer": "string",
+     "source": "string",
+     "name": "string",
+     "label": "string",
+     "confidence": "number",
+     "country": "string",
+     "region": "string",
+     "locality": "string",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/jawg-maps-openapi.yml#GET /places/v1/autocomplete",
+     "openapi/_original/jawg-maps-openapi.yml#GET /places/v1/place/{id}"
+    ]
+   },
+   "microburbs": {
+    "segments": [
+     "nearby",
+     "pois"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": null,
+     "name": null,
+     "sector": null,
+     "school_level_type": null,
+     "distance_m": null,
+     "category": null,
+     "lat": null,
+     "lng": null,
+     "gnaf_id": "string",
+     "center_lat": "number",
+     "center_lng": "number",
+     "radius_m": "integer",
+     "counts": "object",
+     "nearest": "object",
+     "area_name": "string",
+     "area_level": "string",
+     "school_sector_type": null,
+     "naplan_rank": null,
+     "socioeconomic_rank": null,
+     "attendance_rate": null,
+     "gender": null,
+     "boys": null,
+     "girls": null,
+     "count": "integer",
+     "returned": "integer",
+     "categories": "array",
+     "pois": "object"
+    },
+    "evidence": [
+     "openapi/_original/microburbs-openapi.json#GET /v1/properties/{gnaf_id}/amenities/nearby",
+     "openapi/_original/microburbs-openapi.json#GET /v1/properties/{gnaf_id}/schools/nearby",
+     "openapi/_original/microburbs-openapi.json#GET /v1/properties/{gnaf_id}/transport/nearby",
+     "openapi/_original/microburbs-openapi.json#GET /v1/suburbs/{suburb_name}/lifestyle/pois",
+     "openapi/_original/microburbs-openapi.json#GET /v1/suburbs/{suburb_name}/schools/nearby"
+    ]
+   },
+   "openchargemap": {
+    "segments": [
+     "poi"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "ID": "integer",
+     "UUID": "string",
+     "UserComments": "array",
+     "MediaItems": "array",
+     "IsRecentlyVerified": "boolean",
+     "DateLastVerified": "string",
+     "ParentChargePointID": "integer",
+     "DataProviderID": "integer",
+     "DataProvidersReference": "string",
+     "OperatorID": "integer",
+     "OperatorsReference": "string",
+     "UsageTypeID": "integer",
+     "UsageCost": "string",
+     "AddressInfo": "object",
+     "Connections": "array",
+     "NumberOfPoints": "integer",
+     "GeneralComments": "string",
+     "DatePlanned": "string",
+     "DateLastConfirmed": "string",
+     "StatusTypeID": "integer",
+     "DateLastStatusUpdate": "string",
+     "MetadataValues": "array",
+     "DataQualityLevel": "integer",
+     "DateCreated": "string",
+     "SubmissionStatusTypeID": "integer",
+     "DataProvider": "object",
+     "OperatorInfo": "object",
+     "UsageType": "object",
+     "StatusType": "object",
+     "SubmissionStatus": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yaml#GET /poi"
+    ]
+   },
+   "openrouteservice": {
+    "segments": [
+     "pois"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "osm_id": "integer",
+     "osm_type": "integer",
+     "distance": "number",
+     "category_ids": "object",
+     "category_group_ids": "object",
+     "geometry": "object",
+     "request": "string",
+     "filters": "object",
+     "limit": "integer",
+     "sortby": "string"
+    },
+    "evidence": [
+     "openapi/_original/openrouteservice-openapi.yml#POST /pois"
+    ]
+   },
+   "pelias": {
+    "segments": [
+     "place"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "gid": "string",
+     "layer": "string",
+     "source": "string",
+     "source_id": "string",
+     "name": "string",
+     "label": "string",
+     "confidence": "number",
+     "distance": "number",
+     "country": "string",
+     "country_gid": "string",
+     "country_a": "string",
+     "macroregion": "string",
+     "macroregion_gid": "string",
+     "region": "string",
+     "region_gid": "string",
+     "region_a": "string",
+     "county": "string",
+     "county_gid": "string",
+     "localadmin": "string",
+     "localadmin_gid": "string",
+     "locality": "string",
+     "locality_gid": "string",
+     "borough": "string",
+     "borough_gid": "string",
+     "neighbourhood": "string",
+     "neighbourhood_gid": "string",
+     "postalcode": "string",
+     "housenumber": "string",
+     "street": "string",
+     "categories": "array",
+     "addendum": "object",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /place"
+    ]
+   },
+   "placer": {
+    "segments": [
+     "poi"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "apiId": "string",
+     "name": "string",
+     "entityId": "string",
+     "entityType": "string",
+     "categoryInfo": "object",
+     "address": "object",
+     "isFlagged": "boolean",
+     "regions": "object",
+     "placerUrl": "string",
+     "parentChains": "object",
+     "parentTags": "object",
+     "isPermitted": "boolean",
+     "regionType": "string",
+     "regionCode": "string"
+    },
+    "evidence": [
+     "openapi/_original/placer-papi-openapi.json#GET /v1/poi"
+    ]
+   },
+   "precisely-apis": {
+    "segments": [
+     "poi",
+     "autocomplete"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "poiId": "string",
+     "name": "string",
+     "pbkey": "string",
+     "parentPbkey": "string",
+     "geocodeConfidence": "string",
+     "brandName": "string",
+     "tradeName": "string",
+     "franchiseName": "string",
+     "open24Hours": "string",
+     "distance": "object",
+     "businessId": "object",
+     "relevanceScore": "string",
+     "contactDetails": "object",
+     "poiClassification": "object",
+     "salesVolume": "array",
+     "employeeCount": "object",
+     "yearStart": "string",
+     "goodsAgentCode": "string",
+     "goodsAgentCodeDescription": "string",
+     "legalStatusCode": "string",
+     "organizationStatusCode": "string",
+     "organizationStatusCodeDescription": "string",
+     "subsidaryIndicator": "string",
+     "subsidaryIndicatorDescription": "string",
+     "parentBusiness": "object",
+     "domesticUltimateBusiness": "object",
+     "globalUltimateIndicator": "string",
+     "globalUltimateBusiness": "object",
+     "familyMembers": "string",
+     "hierarchyCode": "string",
+     "tickerSymbol": "string",
+     "exchangeName": "string",
+     "ceoName": "string",
+     "ceoTitle": "string",
+     "geometry": "object",
+     "page": "string",
+     "candidates": "string",
+     "totalMatchingCandidates": "string",
+     "poi": "array",
+     "matchedAddress": "object"
+    },
+    "evidence": [
+     "openapi/_original/precisely-apis-openapi.yml#GET /places/v1/poi/autocomplete",
+     "openapi/_original/precisely-apis-openapi.yml#GET /places/v1/poi/{id}"
+    ]
+   },
+   "radar": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/radar-openapi.yml#GET /search/places"
+    ]
+   },
+   "radar-io": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "_id": "string",
+     "name": "string",
+     "categories": "array",
+     "chain": "object",
+     "location": "object"
+    },
+    "evidence": [
+     "openapi/_original/radar-io-openapi.yml#GET /search/places"
+    ]
+   },
+   "rentberry": {
+    "segments": [
+     "place"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "formattedAddress": "string",
+     "transactionType": "string",
+     "minPrice": "integer",
+     "maxPrice": "integer",
+     "minPriceOriginal": "integer",
+     "maxPriceOriginal": "integer",
+     "originalCurrency": "string",
+     "currency": "string",
+     "bedrooms": "array",
+     "baths": "array",
+     "types": "array",
+     "isFilterChanged": "string",
+     "cat": "string",
+     "dog": "string",
+     "page": "integer",
+     "sort": "string",
+     "hasVirtualTour": "string",
+     "mapView": "string",
+     "googleId": "string",
+     "mapWidth": "number",
+     "mapHeight": "number",
+     "mapScale": "number",
+     "url": "string",
+     "amenities": "array"
+    },
+    "evidence": [
+     "openapi/_original/rentberry-openapi.json#POST /v{version}/apartment/search/place",
+     "openapi/_original/rentberry-openapi.yml#POST /v{version}/apartment/search/place"
+    ]
+   },
+   "serper": {
+    "segments": [
+     "places"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "searchParameters": "object",
+     "places": "array",
+     "q": "string",
+     "gl": "string",
+     "hl": "string",
+     "num": "integer",
+     "page": "integer",
+     "tbs": "string",
+     "autocorrect": "boolean",
+     "ll": "string"
+    },
+    "evidence": [
+     "openapi/_original/serper-google-search-api-openapi.yml#POST /places"
+    ]
+   },
+   "sk-telecom": {
+    "segments": [
+     "pois"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "status": "object",
+     "contents": "array",
+     "poiId": "string",
+     "poiName": "string",
+     "rltm": null
+    },
+    "evidence": [
+     "openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /congestion/rltm/pois/{poiId}",
+     "openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /congestion/stat/hourly/pois/{poiId}",
+     "openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /congestion/stat/raw/hourly/pois/{poiId}",
+     "openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /meta/pois",
+     "openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /visit/count/raw/daily/pois/{poiId}",
+     "openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /visit/distance/stat/daily/pois/{poiId}",
+     "openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /visit/seg/stat/daily/pois/{poiId}"
+    ]
+   },
+   "stadia-maps": {
+    "segments": [
+     "place"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "gid": "string",
+     "source_id": "string",
+     "label": "string",
+     "layer": "string",
+     "name": "string",
+     "accuracy": "string",
+     "addendum": "object",
+     "continent": "string",
+     "continent_gid": "string",
+     "country": "string",
+     "country_gid": "string",
+     "neighbourhood": "string",
+     "neighbourhood_gid": "string",
+     "borough": "string",
+     "borough_gid": "string",
+     "postalcode": "string",
+     "street": "string",
+     "housenumber": "string",
+     "locality": "string",
+     "locality_gid": "string",
+     "county": "string",
+     "region": "string",
+     "region_a": "string",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/stadia-maps-openapi.yml#GET /geocoding/v1/place"
+    ]
+   }
+  },
+  "route": {
+   "badger-maps": {
+    "segments": [
+     "routes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "route_date": "string",
+     "position": "integer",
+     "customer_id": "integer",
+     "location": "object",
+     "start_time": "string",
+     "duration": "integer"
+    },
+    "evidence": [
+     "openapi/_original/badger-maps-openapi.yml#GET /routes/",
+     "openapi/_original/badger-maps-openapi.yml#GET /routes/{route_id}/"
+    ]
+   },
+   "flightaware": {
+    "segments": [
+     "route",
+     "routes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "route_distance": "string",
+     "fixes": "array",
+     "links": "object",
+     "num_pages": "integer",
+     "routes": "array"
+    },
+    "evidence": [
+     "openapi/_original/flightaware-openapi.yml#GET /airports/{id}/routes/{dest_id}",
+     "openapi/_original/flightaware-openapi.yml#GET /flights/{id}/route",
+     "openapi/_original/flightaware-openapi.yml#GET /history/flights/{id}/route"
+    ]
+   },
+   "geoapify": {
+    "segments": [
+     "routing"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "mode": "string",
+     "units": "string",
+     "waypoints": "array",
+     "avoid": "array",
+     "details": "array",
+     "traffic": "string",
+     "intermediate_waypoint_mode": "string",
+     "distance": "number",
+     "time": "number",
+     "distance_units": "string",
+     "max_speed": "number",
+     "polyline5": "string",
+     "polyline6": "string",
+     "legs": "array",
+     "country_code": "array",
+     "admin_areas": "array",
+     "admin_area_crossings": "array",
+     "toll": "boolean",
+     "ferry": "boolean",
+     "geometry": "object"
+    },
+    "evidence": [
+     "openapi/_original/geoapify-routing-openapi.json#GET /routing"
+    ]
+   },
+   "here": {
+    "segments": [
+     "routes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "routes": "array",
+     "notices": "array",
+     "avoid": "object",
+     "exclude": "object",
+     "ev": "object",
+     "maxSpeedOnSegment": "array",
+     "networkRestrictedTruck": "object"
+    },
+    "evidence": [
+     "openapi/_original/here-indoor-routing-v1-openapi.yml#GET /routes",
+     "openapi/_original/here-indoor-routing-v1-openapi_2.yml#GET /routes",
+     "openapi/_original/here-intermodal-routing-v8-openapi.yml#GET /routes",
+     "openapi/_original/here-intermodal-routing-v8-openapi_2.yml#GET /routes",
+     "openapi/_original/here-public-transit-v8-openapi.yml#GET /routes",
+     "openapi/_original/here-public-transit-v8-openapi_2.yml#GET /routes",
+     "openapi/_original/here-routing-v8-openapi.yml#GET /routes",
+     "openapi/_original/here-routing-v8-openapi.yml#GET /routes/{routeHandle}",
+     "openapi/_original/here-routing-v8-openapi.yml#POST /routes",
+     "openapi/_original/here-routing-v8-openapi.yml#POST /routes/{routeHandle}",
+     "openapi/_original/here-routing-v8-openapi_2.yml#GET /routes",
+     "openapi/_original/here-routing-v8-openapi_2.yml#GET /routes/{routeHandle}"
+    ]
+   },
+   "hypertrack": {
+    "segments": [
+     "routes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "routes": "array",
+     "pagination_token": "string",
+     "route_handle": "string",
+     "status": "string",
+     "version": "integer",
+     "created_at": "string",
+     "embed_url": "string",
+     "orders": "array",
+     "created_by": null,
+     "ops_group_handle": "string",
+     "track_mode": "string",
+     "plan_mode": "string",
+     "started_at": "string",
+     "assigned_at": "string",
+     "planned_at": "string",
+     "completed_at": "string",
+     "device_id": "string",
+     "driver_handle": "string",
+     "worker_handle": "string",
+     "metadata": "object",
+     "region": null,
+     "distance": "integer",
+     "duration": "integer",
+     "estimate": null,
+     "plan_id": "string",
+     "device_switch_mode": null,
+     "candidate_devices": "array",
+     "completion_source": "string",
+     "scheduled_start_at": "string",
+     "polyline": null,
+     "start_location": null,
+     "end_location": null,
+     "tracking_rate": "number",
+     "time_to_first_event": "number",
+     "time_to_first_location": "number",
+     "completion_type": "string",
+     "optimise": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/hypertrack-openapi.yaml#GET /orders/routes/",
+     "openapi/_original/hypertrack-openapi.yaml#GET /orders/routes/{route_handle}",
+     "openapi/_original/hypertrack-openapi.yaml#PATCH /orders/routes/{route_handle}",
+     "openapi/_original/hypertrack-openapi.yaml#POST /orders/routes/"
+    ]
+   },
+   "jawg-maps": {
+    "segments": [
+     "route"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "locations": "array",
+     "costing": "string",
+     "costing_options": "object",
+     "directions_options": "object"
+    },
+    "evidence": [
+     "openapi/_original/jawg-maps-openapi.yml#POST /routing/route"
+    ]
+   },
+   "openrouteservice": {
+    "segments": [
+     "directions"
+    ],
+    "operations": [
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "type": "string",
+     "geometry": "object",
+     "properties": "object",
+     "routes": "array",
+     "metadata": "object",
+     "bbox": "array",
+     "coordinates": "array",
+     "profile": "string",
+     "preference": "string",
+     "units": "string",
+     "language": "string",
+     "geometry_simplify": "boolean",
+     "instructions": "boolean",
+     "instructions_format": "string",
+     "roundabout_exits": "boolean",
+     "attributes": "array",
+     "extra_info": "array",
+     "elevation": "boolean",
+     "continue_straight": "boolean",
+     "avoid_features": "array",
+     "avoid_borders": "string",
+     "avoid_countries": "array",
+     "avoid_polygons": "object",
+     "maximum_speed": "number",
+     "alternative_routes": "object"
+    },
+    "evidence": [
+     "openapi/_original/openrouteservice-openapi.yml#GET /v2/directions/{profile}",
+     "openapi/_original/openrouteservice-openapi.yml#POST /v2/directions/{profile}"
+    ]
+   },
+   "radar": {
+    "segments": [
+     "directions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/radar-openapi.yml#GET /route/directions"
+    ]
+   },
+   "radar-io": {
+    "segments": [
+     "directions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "distance": "object",
+     "duration": "object",
+     "geometry": "object",
+     "legs": "array"
+    },
+    "evidence": [
+     "openapi/_original/radar-io-openapi.yml#GET /route/directions"
+    ]
+   },
+   "roxyapi": {
+    "segments": [
+     "directions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "total": "number",
+     "limit": "number",
+     "offset": "number",
+     "directions": "array",
+     "id": "string",
+     "dikpala": "string",
+     "kind": "string",
+     "element": "string",
+     "squares": "array",
+     "devatas": "array",
+     "places": "string",
+     "water": "object",
+     "sources": "array"
+    },
+    "evidence": [
+     "openapi/_original/roxyapi-v2-openapi.json#GET /vastu/directions",
+     "openapi/_original/roxyapi-v2-openapi.json#GET /vastu/directions/{id}"
+    ]
+   },
+   "spring-cloud-gateway": {
+    "segments": [
+     "routes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "uri": "string",
+     "predicates": "array",
+     "filters": "array",
+     "order": "integer",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/spring-cloud-gateway-actuator-openapi.yml#DELETE /routes/{id}",
+     "openapi/_original/spring-cloud-gateway-actuator-openapi.yml#GET /routes",
+     "openapi/_original/spring-cloud-gateway-actuator-openapi.yml#GET /routes/{id}",
+     "openapi/_original/spring-cloud-gateway-actuator-openapi.yml#POST /routes",
+     "openapi/_original/spring-cloud-gateway-actuator-openapi.yml#PUT /routes/{id}"
+    ]
+   },
+   "transitland": {
+    "segments": [
+     "routes",
+     "route"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "agency": "object",
+     "alerts": "array",
+     "cemv_support": "integer",
+     "continuous_drop_off": "integer",
+     "continuous_pickup": "integer",
+     "feed_version": "object",
+     "geometry": "object",
+     "id": "integer",
+     "onestop_id": "string",
+     "route_color": "string",
+     "route_desc": "string",
+     "route_id": "string",
+     "route_long_name": "string",
+     "route_short_name": "string",
+     "route_sort_order": "integer",
+     "route_stops": "array",
+     "route_text_color": "string",
+     "route_type": "integer",
+     "route_type_basic": "integer",
+     "route_url": "string",
+     "alternates": "array",
+     "trip": "object",
+     "costing": "string",
+     "costing_options": "object",
+     "date_time": "object",
+     "exclude_locations": "array",
+     "exclude_polygons": null,
+     "format": "string",
+     "language": "string",
+     "linear_cost_factors": "array",
+     "units": "string",
+     "admin_crossings": "boolean",
+     "banner_instructions": "boolean",
+     "directions_type": "string",
+     "elevation_interval": "number",
+     "linear_references": "boolean",
+     "locations": "array",
+     "prioritize_bidirectional": "boolean",
+     "recostings": "array",
+     "roundabout_exits": "boolean",
+     "shape_format": "string",
+     "turn_lanes": "boolean",
+     "voice_instructions": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/transitland-rest-openapi.json#GET /routes",
+     "openapi/_original/transitland-rest-openapi.json#GET /routes/{route_key}",
+     "openapi/_original/transitland-rest-openapi.yml#GET /routes",
+     "openapi/_original/transitland-rest-openapi.yml#GET /routes/{route_key}",
+     "openapi/_original/transitland-routing-openapi.json#GET /valhalla/route",
+     "openapi/_original/transitland-routing-openapi.json#POST /valhalla/route",
+     "openapi/_original/transitland-routing-openapi.yml#GET /valhalla/route",
+     "openapi/_original/transitland-routing-openapi.yml#POST /valhalla/route"
+    ]
+   },
+   "trimble": {
+    "segments": [
+     "route"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "RouteReports": "array",
+     "TMiles": "number",
+     "THours": "number",
+     "Tolls": "object",
+     "Directions": "array"
+    },
+    "evidence": [
+     "openapi/_original/trimble-maps-openapi.yml#GET /Service.svc/route"
+    ]
+   },
+   "valhalla": {
+    "segments": [
+     "route"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "format": "string",
+     "units": "string",
+     "language": "string",
+     "costing": "string",
+     "costing_options": "object",
+     "date_time": "object",
+     "exclude_locations": "array",
+     "exclude_polygons": null,
+     "linear_cost_factors": "array",
+     "locations": "array",
+     "alternates": "integer",
+     "directions_type": "string",
+     "shape_format": "string",
+     "linear_references": "boolean",
+     "admin_crossings": "boolean",
+     "elevation_interval": "number",
+     "banner_instructions": "boolean",
+     "voice_instructions": "boolean",
+     "turn_lanes": "boolean",
+     "roundabout_exits": "boolean",
+     "prioritize_bidirectional": "boolean",
+     "recostings": "array"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yaml#POST /route"
+    ]
+   },
+   "walk-score": {
+    "segments": [
+     "route"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "short_name": "string",
+     "long_name": "string",
+     "category": "string",
+     "agency": "string",
+     "agency_url": "string",
+     "color": "string",
+     "text_color": "string",
+     "description": "string",
+     "stop_ids": "array",
+     "geometry_wkt": "string"
+    },
+    "evidence": [
+     "openapi/_original/walk-score-transit-openapi.yml#GET /transit/route/{routeId}/"
+    ]
+   },
+   "yatmo": {
+    "segments": [
+     "route"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/yatmo-openapi.json#GET /Route"
+    ]
+   }
+  },
+  "distance_matrix": {
+   "geocodio": {
+    "segments": [
+     "distance-matrix"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "origin": "object",
+     "destinations": "array",
+     "origins": "array",
+     "calculation_type": "string",
+     "mode": "string",
+     "units": "string",
+     "max_results": "integer",
+     "max_distance": "number",
+     "max_duration": "integer",
+     "order_by": "string",
+     "min_distance": "number",
+     "min_duration": "integer",
+     "sort_order": "string",
+     "country": "string"
+    },
+    "evidence": [
+     "openapi/_original/geocodio-openapi.json#POST /distance-matrix"
+    ]
+   },
+   "here": {
+    "segments": [
+     "matrix",
+     "matrices"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "matrixId": "string",
+     "matrix": "object",
+     "regionDefinition": null,
+     "origins": "array",
+     "destinations": "array",
+     "profile": "string",
+     "departureTime": "string",
+     "arrivalTime": "string",
+     "routingMode": "string",
+     "transportMode": "string",
+     "avoid": "object",
+     "allow": "object",
+     "maxSpeedOnSegment": "array",
+     "exclude": "object",
+     "vehicle": null,
+     "ev": "object",
+     "truck": null,
+     "truckOptions": null,
+     "scooter": null,
+     "pedestrian": null,
+     "taxi": null,
+     "matrixAttributes": "array",
+     "traffic": "object",
+     "violationMapping": "array",
+     "distances": "array",
+     "errorCodes": "array",
+     "travelTimes": "array"
+    },
+    "evidence": [
+     "openapi/_original/here-matrix-routing-v8-openapi.yml#GET /matrix/{matrixId}",
+     "openapi/_original/here-matrix-routing-v8-openapi.yml#POST /matrix",
+     "openapi/_original/here-matrix-routing-v8-openapi_2.yml#GET /matrix/{matrixId}",
+     "openapi/_original/here-matrix-routing-v8-openapi_2.yml#POST /matrix",
+     "openapi/_original/here-tour-planning-v3-openapi.yml#POST /matrices",
+     "openapi/_original/here-tour-planning-v3-openapi_2.yml#POST /matrices"
+    ]
+   },
+   "jawg-maps": {
+    "segments": [
+     "sources_to_targets"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "sources": "array",
+     "targets": "array",
+     "costing": "string"
+    },
+    "evidence": [
+     "openapi/_original/jawg-maps-openapi.yml#POST /routing/sources_to_targets"
+    ]
+   },
+   "openrouteservice": {
+    "segments": [
+     "matrix"
+    ],
+    "operations": [
+     "POST item"
+    ],
+    "properties": {
+     "durations": "array",
+     "distances": "array",
+     "sources": "array",
+     "destinations": "array",
+     "metadata": "object",
+     "locations": "array",
+     "metrics": "array",
+     "resolve_locations": "boolean",
+     "units": "string",
+     "id": "string"
+    },
+    "evidence": [
+     "openapi/_original/openrouteservice-openapi.yml#POST /v2/matrix/{profile}"
+    ]
+   },
+   "radar": {
+    "segments": [
+     "matrix"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/radar-openapi.yml#GET /route/matrix"
+    ]
+   },
+   "radar-io": {
+    "segments": [
+     "matrix"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "meta": "object",
+     "origins": "array",
+     "destinations": "array",
+     "matrix": "array"
+    },
+    "evidence": [
+     "openapi/_original/radar-io-openapi.yml#GET /route/matrix"
+    ]
+   },
+   "transitland": {
+    "segments": [
+     "sources_to_targets"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "algorithm": "string",
+     "sources": "array",
+     "sources_to_targets": null,
+     "targets": "array",
+     "units": "string",
+     "costing": "string",
+     "costing_options": "object",
+     "date_time": "object",
+     "exclude_locations": "array",
+     "exclude_polygons": null,
+     "format": "string",
+     "id": "string",
+     "language": "string",
+     "linear_cost_factors": "array",
+     "expansion_max_distance": "integer",
+     "matrix_locations": "integer",
+     "shape_format": "string",
+     "verbose": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/transitland-routing-openapi.json#GET /valhalla/sources_to_targets",
+     "openapi/_original/transitland-routing-openapi.json#POST /valhalla/sources_to_targets",
+     "openapi/_original/transitland-routing-openapi.yml#GET /valhalla/sources_to_targets",
+     "openapi/_original/transitland-routing-openapi.yml#POST /valhalla/sources_to_targets"
+    ]
+   },
+   "university-of-minnesota": {
+    "segments": [
+     "matrix"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "reverse_mapping": "object",
+     "forward_mapping": "object",
+     "cop": "object"
+    },
+    "evidence": [
+     "openapi/_original/university-of-minnesota-gems-exchange-pedtools-openapi.json#POST /cop/matrix",
+     "openapi/_original/university-of-minnesota-gems-exchange-pedtools-openapi.yml#POST /cop/matrix"
+    ]
+   },
+   "valhalla": {
+    "segments": [
+     "sources_to_targets"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "format": "string",
+     "units": "string",
+     "language": "string",
+     "costing": "string",
+     "costing_options": "object",
+     "date_time": "object",
+     "exclude_locations": "array",
+     "exclude_polygons": null,
+     "linear_cost_factors": "array",
+     "sources": "array",
+     "targets": "array",
+     "matrix_locations": "integer",
+     "verbose": "boolean",
+     "shape_format": "string",
+     "expansion_max_distance": "integer"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yaml#POST /sources_to_targets"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "2s-io",
+    "aaravunmannedsystems",
+    "agriinfodesign",
+    "agrology",
+    "agstack",
+    "airbus-oneatlas",
+    "aloft",
+    "amazon-location-service",
+    "amazon-route-53",
+    "ambee",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "arccos-golf",
+    "asce-amplify",
+    "atmospore-pollen-forecasts",
+    "attomdata",
+    "australia-post",
+    "badger-maps",
+    "base-operations",
+    "bee-maps",
+    "bentley-systems",
+    "bonneville-power-administration",
+    "bringg",
+    "bureau-of-alcohol-tobacco-firearms-and-explosives-atf-",
+    "bureau-of-land-management",
+    "bureau-of-ocean-energy-management",
+    "capella-space",
+    "carto",
+    "cesium",
+    "chargetrip",
+    "chloris-geospatial",
+    "cintoo",
+    "cities-database-api",
+    "climate-engine",
+    "cornell",
+    "cosmose-ai",
+    "cuebiq",
+    "department-of-the-interior",
+    "dlr",
+    "doi",
+    "eagleview",
+    "emem-dev",
+    "esa",
+    "esri",
+    "esri-arcgis",
+    "estated",
+    "felt",
+    "first-street",
+    "flightaware",
+    "foursquare",
+    "fulcrum",
+    "gbg",
+    "geoapify",
+    "geocode-earth",
+    "geocodio",
+    "geoinsight",
+    "geoloods",
+    "google-business-profile",
+    "google-earth-engine",
+    "google-maps",
+    "google-places",
+    "got-its",
+    "groundtruth",
+    "here",
+    "here-technologies",
+    "hivemapper",
+    "hm-land-registry",
+    "hover",
+    "hydrosat",
+    "hypertrack",
+    "iceye",
+    "ingest0r-com",
+    "inrix",
+    "iss-api",
+    "jawg-maps",
+    "jaxa",
+    "kakao",
+    "kontaktio",
+    "la-poste-groupe",
+    "land-insight",
+    "landmark-information",
+    "langdb",
+    "life360",
+    "lightbox",
+    "lightbox-zoning-api",
+    "listings-api",
+    "loc",
+    "maptiler",
+    "marine-traffic",
+    "maxar",
+    "meteomatics",
+    "microburbs",
+    "mileiq",
+    "mireye",
+    "moodys-rms",
+    "nasa",
+    "nasa-cmr",
+    "nasa-earthdata",
+    "nasa-firms",
+    "national-geospatial-intelligence-agency",
+    "national-interagency-fire-center",
+    "near-space-labs",
+    "nexar",
+    "nominatim",
+    "ocient",
+    "odos",
+    "ogc",
+    "one-concern",
+    "openchargemap",
+    "openeo",
+    "openmercantil",
+    "openrouteservice",
+    "openstreetmap",
+    "opentopography-api",
+    "opentripmap",
+    "openweathermap",
+    "opnsense",
+    "orange",
+    "ordnance-survey",
+    "osmapi",
+    "otonomo",
+    "parkwhiz",
+    "pelias",
+    "pixxel",
+    "placekey",
+    "placer",
+    "planet-labs",
+    "pontofato",
+    "positionstack",
+    "postalcodes-info",
+    "precisely-apis",
+    "pvcase",
+    "radar",
+    "radar-io",
+    "radiant-earth",
+    "rainbow-ai",
+    "redfin",
+    "regrid",
+    "rentberry",
+    "requesty",
+    "rest-countries",
+    "roxyapi",
+    "sentinel-hub",
+    "serper",
+    "sewerai",
+    "sex-offenders-api",
+    "sk-telecom",
+    "skywatch",
+    "smarty",
+    "spothero",
+    "spotio",
+    "spring-cloud-gateway",
+    "square",
+    "stadia-maps",
+    "the-climate-corporation",
+    "tomorrow-io",
+    "tomtom",
+    "transitland",
+    "travelcenters-of-america",
+    "trimble",
+    "trimble-navigation",
+    "ubiquiti",
+    "umbra",
+    "university-of-maryland-college-park",
+    "university-of-minnesota",
+    "us-census-bureau",
+    "us-geological-survey",
+    "usda",
+    "usda-snap",
+    "valhalla",
+    "valueserp",
+    "vantor",
+    "vesselfinder",
+    "voygr",
+    "wageningen-university-research",
+    "walk-score",
+    "wanapis",
+    "what3words",
+    "wherobots",
+    "windy",
+    "xweather",
+    "yatmo",
+    "zenserp"
+   ],
+   "kebab-case": [
+    "2s-io",
+    "aaravunmannedsystems",
+    "agriinfodesign",
+    "agrology",
+    "agstack",
+    "airbus-oneatlas",
+    "aloft",
+    "ambee",
+    "apifreaks-api-hub-for-developers",
+    "asce-amplify",
+    "atmospore-pollen-forecasts",
+    "australia-post",
+    "base-operations",
+    "bee-maps",
+    "bentley-systems",
+    "bringg",
+    "capella-space",
+    "cesium",
+    "cintoo",
+    "cosmose-ai",
+    "cuebiq",
+    "dlr",
+    "doi",
+    "eagleview",
+    "emem-dev",
+    "esri-arcgis",
+    "gbg",
+    "geoapify",
+    "geocodio",
+    "geofabrik",
+    "got-its",
+    "groundtruth",
+    "here",
+    "hivemapper",
+    "hm-land-registry",
+    "hypertrack",
+    "iss-api",
+    "kakao",
+    "kontaktio",
+    "la-poste-groupe",
+    "land-insight",
+    "landmark-information",
+    "life360",
+    "listings-api",
+    "loc",
+    "marine-traffic",
+    "maxar",
+    "microburbs",
+    "mileiq",
+    "mireye",
+    "moodys-rms",
+    "nasa",
+    "national-geospatial-intelligence-agency",
+    "odos",
+    "ogc",
+    "one-concern",
+    "openmercantil",
+    "orange",
+    "otonomo",
+    "pixxel",
+    "placer",
+    "planet-labs",
+    "postalcodes-info",
+    "precisely-apis",
+    "radiant-earth",
+    "redfin",
+    "rentberry",
+    "requesty",
+    "roxyapi",
+    "sewerai",
+    "sex-offenders-api",
+    "sk-telecom",
+    "smarty",
+    "spotio",
+    "square",
+    "timezonedb",
+    "travelcenters-of-america",
+    "ubiquiti",
+    "umbra",
+    "university-of-minnesota",
+    "us-geological-survey",
+    "usda",
+    "vantor",
+    "voygr",
+    "what3words",
+    "wherobots",
+    "windy",
+    "yatmo"
+   ],
+   "other": [
+    "aaravunmannedsystems",
+    "agriinfodesign",
+    "airbus-oneatlas",
+    "aishub",
+    "amazon-route-53",
+    "ambee",
+    "australia-post",
+    "bonneville-power-administration",
+    "cintoo",
+    "emem-dev",
+    "esa",
+    "esri",
+    "first-street",
+    "fulcrum",
+    "gbg",
+    "geofabrik",
+    "google-earth-engine",
+    "google-maps",
+    "google-places",
+    "here",
+    "hm-land-registry",
+    "hover",
+    "jawg-maps",
+    "kakao",
+    "la-poste-groupe",
+    "loc",
+    "maptiler",
+    "marine-traffic",
+    "mireye",
+    "moodys-rms",
+    "nasa-cmr",
+    "national-geospatial-intelligence-agency",
+    "ogc",
+    "openeo",
+    "openmercantil",
+    "openweathermap",
+    "ordnance-survey",
+    "otonomo",
+    "pontofato",
+    "postalcodes-info",
+    "precisely-apis",
+    "radar-io",
+    "redfin",
+    "rentberry",
+    "sentinel-hub",
+    "sewerai",
+    "tomtom",
+    "trimble",
+    "us-census-bureau",
+    "usda-snap",
+    "valhalla",
+    "valueserp",
+    "wherobots"
+   ],
+   "snake_case": [
+    "agriinfodesign",
+    "agstack",
+    "bringg",
+    "climate-engine",
+    "emem-dev",
+    "esa",
+    "felt",
+    "flightaware",
+    "fulcrum",
+    "groundtruth",
+    "hover",
+    "hypertrack",
+    "jawg-maps",
+    "kakao",
+    "la-poste-groupe",
+    "land-insight",
+    "listings-api",
+    "meteomatics",
+    "moodys-rms",
+    "nasa",
+    "nasa-firms",
+    "near-space-labs",
+    "ocient",
+    "openeo",
+    "openweathermap",
+    "otonomo",
+    "parkwhiz",
+    "redfin",
+    "regrid",
+    "rentberry",
+    "sewerai",
+    "sk-telecom",
+    "skywatch",
+    "stadia-maps",
+    "transitland",
+    "valhalla",
+    "wageningen-university-research",
+    "wherobots",
+    "zenserp"
+   ],
+   "camelCase": [
+    "airbus-oneatlas",
+    "attomdata",
+    "bentley-systems",
+    "chloris-geospatial",
+    "cornell",
+    "esri",
+    "esri-arcgis",
+    "google-business-profile",
+    "here",
+    "inrix",
+    "landmark-information",
+    "listings-api",
+    "maptiler",
+    "moodys-rms",
+    "ogc",
+    "opentopography-api",
+    "opnsense",
+    "ordnance-survey",
+    "precisely-apis",
+    "redfin",
+    "sentinel-hub",
+    "spotio",
+    "terabase-energy",
+    "the-climate-corporation",
+    "tomtom",
+    "trimble",
+    "trimble-navigation"
+   ],
+   "PascalCase": [
+    "agstack",
+    "airbus-oneatlas",
+    "bonneville-power-administration",
+    "british-columbia-data-catalogue",
+    "bureau-of-land-management",
+    "bureau-of-ocean-energy-management",
+    "eagleview",
+    "esri",
+    "hexagon",
+    "inrix",
+    "jaxa",
+    "maptiler",
+    "moodys-rms",
+    "nasa",
+    "national-interagency-fire-center",
+    "realestateapi",
+    "sewerai",
+    "shipfinder-ais-data-api",
+    "spotio",
+    "terabase-energy",
+    "tomtom",
+    "us-census-bureau",
+    "yatmo"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "2s-io",
+    "aaravunmannedsystems",
+    "agriinfodesign",
+    "agrology",
+    "agstack",
+    "airbus-oneatlas",
+    "aishub",
+    "aloft",
+    "amazon-route-53",
+    "ambee",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "arccos-golf",
+    "asce-amplify",
+    "atmospore-pollen-forecasts",
+    "attomdata",
+    "australia-post",
+    "badger-maps",
+    "base-operations",
+    "bee-maps",
+    "bonneville-power-administration",
+    "british-columbia-data-catalogue",
+    "bureau-of-alcohol-tobacco-firearms-and-explosives-atf-",
+    "bureau-of-land-management",
+    "bureau-of-ocean-energy-management",
+    "carto",
+    "cesium",
+    "chloris-geospatial",
+    "cintoo",
+    "climate-engine",
+    "cornell",
+    "cosmose-ai",
+    "cuebiq",
+    "department-of-the-interior",
+    "dlr",
+    "doi",
+    "eagleview",
+    "emem-dev",
+    "esa",
+    "esri",
+    "esri-arcgis",
+    "estated",
+    "felt",
+    "flightaware",
+    "foursquare",
+    "fulcrum",
+    "gbg",
+    "geoapify",
+    "geocode-earth",
+    "geocodio",
+    "geoinsight",
+    "geoloods",
+    "google-maps",
+    "got-its",
+    "groundtruth",
+    "here",
+    "here-technologies",
+    "hivemapper",
+    "hm-land-registry",
+    "hover",
+    "hydrosat",
+    "hypertrack",
+    "inrix",
+    "jawg-maps",
+    "jaxa",
+    "kakao",
+    "kontaktio",
+    "la-poste-groupe",
+    "life360",
+    "lightbox",
+    "lightbox-zoning-api",
+    "listings-api",
+    "loc",
+    "maptiler",
+    "marine-traffic",
+    "maxar",
+    "meteomatics",
+    "microburbs",
+    "mileiq",
+    "moodys-rms",
+    "nasa",
+    "nasa-cmr",
+    "nasa-earthdata",
+    "nasa-firms",
+    "national-geospatial-intelligence-agency",
+    "national-interagency-fire-center",
+    "near-space-labs",
+    "nominatim",
+    "ocient",
+    "ogc",
+    "openchargemap",
+    "openeo",
+    "openmercantil",
+    "openrouteservice",
+    "openstreetmap",
+    "opentopography-api",
+    "opentripmap",
+    "openweathermap",
+    "ordnance-survey",
+    "osmapi",
+    "otonomo",
+    "parkwhiz",
+    "pelias",
+    "pixxel",
+    "placer",
+    "pontofato",
+    "positionstack",
+    "postalcodes-info",
+    "precisely-apis",
+    "radar",
+    "radar-io",
+    "rainbow-ai",
+    "redfin",
+    "regrid",
+    "rentberry",
+    "rest-countries",
+    "roxyapi",
+    "sentinel-hub",
+    "sewerai",
+    "sex-offenders-api",
+    "shipfinder-ais-data-api",
+    "sk-telecom",
+    "smarty",
+    "spothero",
+    "spotio",
+    "square",
+    "stadia-maps",
+    "terabase-energy",
+    "timezonedb",
+    "tomorrow-io",
+    "tomtom",
+    "transitland",
+    "travelcenters-of-america",
+    "trimble",
+    "trimble-navigation",
+    "ubiquiti",
+    "umbra",
+    "university-of-maryland-college-park",
+    "university-of-minnesota",
+    "us-census-bureau",
+    "us-geological-survey",
+    "usda",
+    "usda-snap",
+    "valueserp",
+    "vantor",
+    "vesselfinder",
+    "voygr",
+    "wageningen-university-research",
+    "walk-score",
+    "what3words",
+    "wherobots",
+    "windy",
+    "xweather",
+    "yatmo",
+    "zenserp"
+   ],
+   "camelCase": [
+    "2s-io",
+    "aaravunmannedsystems",
+    "agriinfodesign",
+    "agstack",
+    "airbus-oneatlas",
+    "aloft",
+    "ambee",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "arccos-golf",
+    "asce-amplify",
+    "attomdata",
+    "australia-post",
+    "base-operations",
+    "bee-maps",
+    "bentley-systems",
+    "bonneville-power-administration",
+    "british-columbia-data-catalogue",
+    "bureau-of-land-management",
+    "bureau-of-ocean-energy-management",
+    "cesium",
+    "chloris-geospatial",
+    "cintoo",
+    "cosmose-ai",
+    "cuebiq",
+    "department-of-the-interior",
+    "dlr",
+    "doi",
+    "eagleview",
+    "esri",
+    "esri-arcgis",
+    "gbg",
+    "geoapify",
+    "geocodio",
+    "google-earth-engine",
+    "google-maps",
+    "google-places",
+    "got-its",
+    "here",
+    "hivemapper",
+    "inrix",
+    "jaxa",
+    "kontaktio",
+    "la-poste-groupe",
+    "landmark-information",
+    "life360",
+    "listings-api",
+    "loc",
+    "maptiler",
+    "moodys-rms",
+    "nasa",
+    "nasa-earthdata",
+    "national-interagency-fire-center",
+    "nominatim",
+    "odos",
+    "ogc",
+    "opentopography-api",
+    "ordnance-survey",
+    "placer",
+    "precisely-apis",
+    "pvcase",
+    "radar-io",
+    "redfin",
+    "rentberry",
+    "rest-countries",
+    "roxyapi",
+    "sentinel-hub",
+    "sk-telecom",
+    "spotio",
+    "terabase-energy",
+    "the-climate-corporation",
+    "tomorrow-io",
+    "tomtom",
+    "transitland",
+    "trimble",
+    "ubiquiti",
+    "us-census-bureau",
+    "us-geological-survey",
+    "usda",
+    "usda-snap",
+    "vantor",
+    "wageningen-university-research",
+    "wherobots",
+    "yatmo"
+   ],
+   "snake_case": [
+    "2s-io",
+    "aaravunmannedsystems",
+    "agstack",
+    "aloft",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "atmospore-pollen-forecasts",
+    "australia-post",
+    "badger-maps",
+    "bee-maps",
+    "chloris-geospatial",
+    "cities-database-api",
+    "climate-engine",
+    "cosmose-ai",
+    "doi",
+    "emem-dev",
+    "estated",
+    "felt",
+    "flightaware",
+    "foursquare",
+    "fulcrum",
+    "geoapify",
+    "geocode-earth",
+    "geocodio",
+    "geoinsight",
+    "geoloods",
+    "google-maps",
+    "groundtruth",
+    "here",
+    "hivemapper",
+    "hm-land-registry",
+    "hover",
+    "hypertrack",
+    "jaxa",
+    "kakao",
+    "la-poste-groupe",
+    "maptiler",
+    "marine-traffic",
+    "maxar",
+    "meteomatics",
+    "microburbs",
+    "mileiq",
+    "nasa",
+    "nasa-cmr",
+    "nasa-firms",
+    "near-space-labs",
+    "nominatim",
+    "ocient",
+    "odos",
+    "openmercantil",
+    "openrouteservice",
+    "openstreetmap",
+    "opentopography-api",
+    "opentripmap",
+    "openweathermap",
+    "ordnance-survey",
+    "osmapi",
+    "otonomo",
+    "pixxel",
+    "positionstack",
+    "redfin",
+    "regrid",
+    "sex-offenders-api",
+    "shipfinder-ais-data-api",
+    "smarty",
+    "spothero",
+    "square",
+    "transitland",
+    "travelcenters-of-america",
+    "umbra",
+    "university-of-minnesota",
+    "valhalla",
+    "valueserp",
+    "vantor",
+    "vesselfinder",
+    "voygr",
+    "wageningen-university-research",
+    "wherobots",
+    "xweather",
+    "zenserp"
+   ],
+   "other": [
+    "2s-io",
+    "aloft",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "australia-post",
+    "bentley-systems",
+    "cities-database-api",
+    "cornell",
+    "geocode-earth",
+    "geocodio",
+    "here",
+    "hover",
+    "jawg-maps",
+    "landmark-information",
+    "nasa-cmr",
+    "openmercantil",
+    "openrouteservice",
+    "opentopography-api",
+    "pelias",
+    "stadia-maps",
+    "ubiquiti",
+    "us-census-bureau",
+    "zenserp"
+   ],
+   "kebab-case": [
+    "apifreaks-api-hub-for-developers",
+    "british-columbia-data-catalogue",
+    "dlr",
+    "doi",
+    "esa",
+    "geoinsight",
+    "hydrosat",
+    "jawg-maps",
+    "la-poste-groupe",
+    "nominatim",
+    "ogc",
+    "openstreetmap",
+    "ordnance-survey",
+    "umbra",
+    "what3words"
+   ],
+   "PascalCase": [
+    "attomdata",
+    "eagleview",
+    "esri",
+    "esri-arcgis",
+    "jaxa",
+    "marine-traffic",
+    "ordnance-survey",
+    "spotio",
+    "terabase-energy",
+    "us-census-bureau",
+    "vesselfinder"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "2s-io",
+    "agriinfodesign",
+    "airbus-oneatlas",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "arccos-golf",
+    "australia-post",
+    "bonneville-power-administration",
+    "bureau-of-land-management",
+    "bureau-of-ocean-energy-management",
+    "cesium",
+    "cuebiq",
+    "department-of-the-interior",
+    "dlr",
+    "doi",
+    "emem-dev",
+    "esa",
+    "foursquare",
+    "geoapify",
+    "geocodio",
+    "geoinsight",
+    "got-its",
+    "groundtruth",
+    "here",
+    "here-technologies",
+    "hm-land-registry",
+    "hydrosat",
+    "hypertrack",
+    "life360",
+    "loc",
+    "maptiler",
+    "marine-traffic",
+    "maxar",
+    "microburbs",
+    "mileiq",
+    "moodys-rms",
+    "nasa-cmr",
+    "nasa-earthdata",
+    "nominatim",
+    "ogc",
+    "openeo",
+    "openmercantil",
+    "openstreetmap",
+    "opentripmap",
+    "openweathermap",
+    "ordnance-survey",
+    "pixxel",
+    "placer",
+    "pontofato",
+    "positionstack",
+    "radar-io",
+    "regrid",
+    "rentberry",
+    "roxyapi",
+    "sentinel-hub",
+    "sewerai",
+    "spothero",
+    "spotio",
+    "square",
+    "tomtom",
+    "transitland",
+    "travelcenters-of-america",
+    "umbra",
+    "university-of-minnesota",
+    "us-geological-survey",
+    "vantor",
+    "vesselfinder",
+    "voygr",
+    "wherobots",
+    "windy",
+    "xweather"
+   ],
+   "page": [
+    "2s-io",
+    "agriinfodesign",
+    "airbus-oneatlas",
+    "aloft",
+    "apifreaks-api-hub-for-developers",
+    "attomdata",
+    "base-operations",
+    "bureau-of-alcohol-tobacco-firearms-and-explosives-atf-",
+    "cesium",
+    "cuebiq",
+    "eagleview",
+    "fulcrum",
+    "geocodio",
+    "groundtruth",
+    "here",
+    "hover",
+    "kontaktio",
+    "la-poste-groupe",
+    "listings-api",
+    "loc",
+    "marine-traffic",
+    "nasa",
+    "nasa-cmr",
+    "near-space-labs",
+    "openmercantil",
+    "otonomo",
+    "pontofato",
+    "precisely-apis",
+    "rentberry",
+    "timezonedb",
+    "trimble",
+    "valueserp"
+   ],
+   "offset": [
+    "2s-io",
+    "arccos-golf",
+    "australia-post",
+    "doi",
+    "esa",
+    "geoapify",
+    "geoinsight",
+    "here",
+    "loc",
+    "maptiler",
+    "microburbs",
+    "moodys-rms",
+    "nasa-cmr",
+    "ogc",
+    "openeo",
+    "openmercantil",
+    "ordnance-survey",
+    "pixxel",
+    "pontofato",
+    "regrid",
+    "roxyapi",
+    "sewerai",
+    "spothero",
+    "university-of-minnesota",
+    "us-geological-survey",
+    "wherobots",
+    "windy"
+   ],
+   "page_size": [
+    "2s-io",
+    "agriinfodesign",
+    "attomdata",
+    "doi",
+    "esri-arcgis",
+    "google-earth-engine",
+    "groundtruth",
+    "inrix",
+    "nasa-cmr",
+    "near-space-labs",
+    "openmercantil",
+    "otonomo",
+    "pixxel",
+    "spotio",
+    "trimble",
+    "ubiquiti",
+    "usda",
+    "wageningen-university-research"
+   ],
+   "size": [
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "australia-post",
+    "cuebiq",
+    "geoapify",
+    "geocode-earth",
+    "here",
+    "jawg-maps",
+    "kontaktio",
+    "la-poste-groupe",
+    "nasa",
+    "openrouteservice",
+    "pelias",
+    "stadia-maps",
+    "wherobots"
+   ],
+   "count": [
+    "2s-io",
+    "airbus-oneatlas",
+    "apifreaks-api-hub-for-developers",
+    "apiverve",
+    "british-columbia-data-catalogue",
+    "eagleview",
+    "here",
+    "landmark-information",
+    "nasa",
+    "ordnance-survey",
+    "roxyapi",
+    "sentinel-hub",
+    "square",
+    "vantor"
+   ],
+   "start": [
+    "2s-io",
+    "aloft",
+    "apiverve",
+    "department-of-the-interior",
+    "doi",
+    "emem-dev",
+    "esri-arcgis",
+    "flightaware",
+    "here",
+    "openrouteservice",
+    "openweathermap",
+    "zenserp"
+   ],
+   "skip": [
+    "2s-io",
+    "bentley-systems",
+    "british-columbia-data-catalogue",
+    "landmark-information",
+    "osmapi",
+    "placer",
+    "terabase-energy"
+   ],
+   "cursor": [
+    "2s-io",
+    "flightaware",
+    "groundtruth",
+    "marine-traffic",
+    "openmercantil",
+    "square",
+    "wherobots"
+   ],
+   "before": [
+    "aloft",
+    "apifreaks-api-hub-for-developers",
+    "here",
+    "la-poste-groupe",
+    "listings-api",
+    "rentberry"
+   ],
+   "after": [
+    "aloft",
+    "apifreaks-api-hub-for-developers",
+    "here",
+    "la-poste-groupe",
+    "listings-api",
+    "transitland"
+   ],
+   "per_page": [
+    "2s-io",
+    "fulcrum",
+    "hover",
+    "listings-api",
+    "spotio"
+   ],
+   "max_results": [
+    "2s-io",
+    "australia-post",
+    "geocodio",
+    "nasa-earthdata",
+    "smarty"
+   ],
+   "page_token": [
+    "2s-io",
+    "google-earth-engine",
+    "here"
+   ],
+   "top": [
+    "bentley-systems",
+    "landmark-information",
+    "terabase-energy"
+   ],
+   "next": [
+    "transitland"
+   ]
+  },
+  "property": {
+   "lower": [
+    "2s-io",
+    "apifreaks-api-hub-for-developers",
+    "attomdata",
+    "badger-maps",
+    "cuebiq",
+    "doi",
+    "esri-arcgis",
+    "flightaware",
+    "foursquare",
+    "geoapify",
+    "geocode-earth",
+    "geocodio",
+    "google-maps",
+    "google-places",
+    "groundtruth",
+    "here",
+    "here-technologies",
+    "hypertrack",
+    "jawg-maps",
+    "maptiler",
+    "microburbs",
+    "moodys-rms",
+    "nominatim",
+    "openmercantil",
+    "openrouteservice",
+    "openstreetmap",
+    "openweathermap",
+    "pelias",
+    "placer",
+    "positionstack",
+    "precisely-apis",
+    "radar-io",
+    "rentberry",
+    "roxyapi",
+    "serper",
+    "sk-telecom",
+    "spring-cloud-gateway",
+    "stadia-maps",
+    "transitland",
+    "university-of-minnesota",
+    "valhalla",
+    "walk-score"
+   ],
+   "snake_case": [
+    "apifreaks-api-hub-for-developers",
+    "badger-maps",
+    "flightaware",
+    "foursquare",
+    "geoapify",
+    "geocode-earth",
+    "geocodio",
+    "groundtruth",
+    "hypertrack",
+    "jawg-maps",
+    "maptiler",
+    "microburbs",
+    "nominatim",
+    "openrouteservice",
+    "openstreetmap",
+    "openweathermap",
+    "pelias",
+    "positionstack",
+    "stadia-maps",
+    "transitland",
+    "university-of-minnesota",
+    "valhalla",
+    "walk-score"
+   ],
+   "camelCase": [
+    "2s-io",
+    "apifreaks-api-hub-for-developers",
+    "cuebiq",
+    "doi",
+    "esri-arcgis",
+    "geoapify",
+    "google-maps",
+    "google-places",
+    "here",
+    "moodys-rms",
+    "placer",
+    "precisely-apis",
+    "radar-io",
+    "rentberry",
+    "serper",
+    "sk-telecom"
+   ],
+   "other": [
+    "apifreaks-api-hub-for-developers",
+    "geoapify",
+    "geocodio",
+    "radar-io"
+   ],
+   "PascalCase": [
+    "geoloods",
+    "openchargemap",
+    "trimble"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "aaravunmannedsystems",
+    "agriinfodesign",
+    "agrology",
+    "agstack",
+    "airbus-oneatlas",
+    "aloft",
+    "attomdata",
+    "australia-post",
+    "base-operations",
+    "bee-maps",
+    "british-columbia-data-catalogue",
+    "bureau-of-alcohol-tobacco-firearms-and-explosives-atf-",
+    "carto",
+    "chloris-geospatial",
+    "doi",
+    "emem-dev",
+    "esri-arcgis",
+    "first-street",
+    "flightaware",
+    "fulcrum",
+    "gbg",
+    "geoapify",
+    "geocodio",
+    "geofabrik",
+    "google-earth-engine",
+    "here",
+    "hivemapper",
+    "hover",
+    "ingest0r-com",
+    "inrix",
+    "jawg-maps",
+    "kontaktio",
+    "la-poste-groupe",
+    "land-insight",
+    "landmark-information",
+    "life360",
+    "loc",
+    "maptiler",
+    "meteomatics",
+    "microburbs",
+    "moodys-rms",
+    "nasa",
+    "nasa-firms",
+    "national-interagency-fire-center",
+    "near-space-labs",
+    "ocient",
+    "odos",
+    "openeo",
+    "openmercantil",
+    "openrouteservice",
+    "openstreetmap",
+    "opentripmap",
+    "openweathermap",
+    "ordnance-survey",
+    "otonomo",
+    "pixxel",
+    "placer",
+    "pontofato",
+    "postalcodes-info",
+    "precisely-apis",
+    "pvcase",
+    "radar-io",
+    "rainbow-ai",
+    "redfin",
+    "rentberry",
+    "rest-countries",
+    "roxyapi",
+    "sentinel-hub",
+    "sewerai",
+    "sk-telecom",
+    "skywatch",
+    "smarty",
+    "spotio",
+    "spring-cloud-gateway",
+    "square",
+    "terabase-energy",
+    "tomorrow-io",
+    "tomtom",
+    "transitland",
+    "travelcenters-of-america",
+    "ubiquiti",
+    "umbra",
+    "university-of-minnesota",
+    "us-census-bureau",
+    "valhalla",
+    "vesselfinder",
+    "wageningen-university-research",
+    "wanapis",
+    "wherobots",
+    "xweather",
+    "zenserp"
+   ],
+   "camelCase": [
+    "agriinfodesign",
+    "agrology",
+    "airbus-oneatlas",
+    "arccos-golf",
+    "australia-post",
+    "base-operations",
+    "bentley-systems",
+    "bonneville-power-administration",
+    "british-columbia-data-catalogue",
+    "bureau-of-alcohol-tobacco-firearms-and-explosives-atf-",
+    "bureau-of-land-management",
+    "bureau-of-ocean-energy-management",
+    "capella-space",
+    "carto",
+    "cesium",
+    "cintoo",
+    "cuebiq",
+    "dlr",
+    "doi",
+    "eagleview",
+    "esri-arcgis",
+    "gbg",
+    "google-business-profile",
+    "google-earth-engine",
+    "google-maps",
+    "google-places",
+    "got-its",
+    "groundtruth",
+    "here",
+    "here-technologies",
+    "hm-land-registry",
+    "iceye",
+    "inrix",
+    "jawg-maps",
+    "kontaktio",
+    "la-poste-groupe",
+    "landmark-information",
+    "lightbox",
+    "lightbox-zoning-api",
+    "listings-api",
+    "loc",
+    "maptiler",
+    "moodys-rms",
+    "nasa-cmr",
+    "nasa-earthdata",
+    "national-interagency-fire-center",
+    "ogc",
+    "ordnance-survey",
+    "pixxel",
+    "planet-labs",
+    "precisely-apis",
+    "pvcase",
+    "radar",
+    "radar-io",
+    "redfin",
+    "rentberry",
+    "sentinel-hub",
+    "sk-telecom",
+    "smarty",
+    "spotio",
+    "terabase-energy",
+    "the-climate-corporation",
+    "tomorrow-io",
+    "tomtom",
+    "trimble",
+    "us-census-bureau",
+    "us-geological-survey",
+    "usda",
+    "vantor",
+    "vesselfinder",
+    "walk-score",
+    "wherobots",
+    "windy",
+    "yatmo"
+   ],
+   "snake_case": [
+    "agriinfodesign",
+    "agstack",
+    "airbus-oneatlas",
+    "aloft",
+    "australia-post",
+    "badger-maps",
+    "emem-dev",
+    "esa",
+    "felt",
+    "flightaware",
+    "foursquare",
+    "geoinsight",
+    "groundtruth",
+    "hm-land-registry",
+    "hover",
+    "hydrosat",
+    "hypertrack",
+    "inrix",
+    "la-poste-groupe",
+    "land-insight",
+    "langdb",
+    "marine-traffic",
+    "microburbs",
+    "mileiq",
+    "mireye",
+    "nasa",
+    "nasa-firms",
+    "near-space-labs",
+    "odos",
+    "openeo",
+    "openmercantil",
+    "openweathermap",
+    "parkwhiz",
+    "pixxel",
+    "planet-labs",
+    "radiant-earth",
+    "regrid",
+    "rentberry",
+    "requesty",
+    "sewerai",
+    "sk-telecom",
+    "spothero",
+    "square",
+    "transitland",
+    "umbra",
+    "university-of-minnesota",
+    "voygr",
+    "wageningen-university-research",
+    "wanapis",
+    "wherobots"
+   ],
+   "other": [
+    "aaravunmannedsystems",
+    "airbus-oneatlas",
+    "geoapify",
+    "maptiler",
+    "near-space-labs",
+    "otonomo",
+    "smarty",
+    "tomtom",
+    "transitland"
+   ],
+   "PascalCase": [
+    "airbus-oneatlas",
+    "amazon-location-service",
+    "amazon-route-53",
+    "sk-telecom",
+    "tomtom"
+   ],
+   "kebab-case": [
+    "ordnance-survey"
+   ]
+  }
+ }
+}

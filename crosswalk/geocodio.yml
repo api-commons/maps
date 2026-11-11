@@ -1,0 +1,31 @@
+provider: geocodio
+apis_io: https://apis.io/providers/geocodio/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - geocode
+    - reverse
+    properties:
+      address: formatted_address
+      confidence: accuracy
+      geometry: location
+      type: match_type
+      source: source
+    core_coverage: 0.375
+    evidence:
+    - openapi/_original/geocodio-openapi.json#GET /geocode
+    - openapi/_original/geocodio-openapi.json#GET /reverse
+    - openapi/_original/geocodio-openapi.json#POST /geocode
+    - openapi/_original/geocodio-openapi.json#POST /reverse
+  distance_matrix:
+    path_segment:
+    - distance-matrix
+    properties:
+      destinations: destinations
+      origins: origins
+      units: units
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/geocodio-openapi.json#POST /distance-matrix

@@ -1,0 +1,58 @@
+provider: jawg-maps
+apis_io: https://apis.io/providers/jawg-maps/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - reverse
+    properties:
+      address: label
+      name: name
+      country: country
+      confidence: confidence
+      geometry: geometry
+      id: gid
+      region: region
+      type: layer
+      city: locality
+      source: source
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/jawg-maps-openapi.yml#GET /places/v1/reverse
+  place:
+    path_segment:
+    - autocomplete
+    - place
+    properties:
+      id: gid
+      name: name
+      geometry: geometry
+      address: label
+      city: locality
+      country: country
+      region: region
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/jawg-maps-openapi.yml#GET /places/v1/autocomplete
+    - openapi/_original/jawg-maps-openapi.yml#GET /places/v1/place/{id}
+  route:
+    path_segment:
+    - route
+    properties:
+      costing: costing
+      costing_options: costing_options
+      locations: locations
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/jawg-maps-openapi.yml#POST /routing/route
+  distance_matrix:
+    path_segment:
+    - sources_to_targets
+    properties:
+      destinations: targets
+      origins: sources
+      costing: costing
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/jawg-maps-openapi.yml#POST /routing/sources_to_targets

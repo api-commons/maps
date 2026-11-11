@@ -1,0 +1,17 @@
+provider: openmercantil
+apis_io: https://apis.io/providers/openmercantil/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - geocode
+    properties:
+      address: address
+      latitude: lat
+      longitude: lng
+      source: source
+    core_coverage: 0.375
+    evidence:
+    - openapi/_original/openmercantil-openapi-1.9.3.json#GET /api/v1/company/{slug}/geocode
+    - openapi/_original/openmercantil-openapi.yml#GET /api/v1/company/{slug}/geocode

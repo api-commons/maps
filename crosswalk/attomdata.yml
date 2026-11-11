@@ -1,0 +1,12 @@
+provider: attomdata
+apis_io: https://apis.io/providers/attomdata/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - poi
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/attom-poi-api-openapi.yml#GET /v4/neighborhood/poi

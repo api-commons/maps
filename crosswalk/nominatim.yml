@@ -1,0 +1,22 @@
+provider: nominatim
+apis_io: https://apis.io/providers/nominatim/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - reverse
+    properties:
+      address:
+      - display_name
+      - address
+      name: name
+      confidence: importance
+      id:
+      - place_id
+      - osm_id
+      latitude: lat
+      longitude: lon
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/nominatim-openapi.yml#GET /reverse

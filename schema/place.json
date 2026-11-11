@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/maps/main/schema/place.json",
+  "title": "Place",
+  "description": "The common place in Maps and Geocoding, distilled from 24 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "id",
+        "gid",
+        "placeId",
+        "place_id",
+        "ID",
+        "UUID",
+        "osm_id",
+        "_id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "Name"
+      ]
+    },
+    "geometry": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.542,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "geometry",
+        "location",
+        "viewport"
+      ]
+    },
+    "address": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "address",
+        "label",
+        "formattedAddress",
+        "displayName",
+        "formatted"
+      ]
+    },
+    "category": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "categories",
+        "types",
+        "category"
+      ]
+    },
+    "city": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.292,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "locality",
+        "city",
+        "municipality",
+        "town"
+      ]
+    },
+    "country": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.292,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "country",
+        "country_code",
+        "CountryCode",
+        "CountryName"
+      ]
+    },
+    "latitude": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.292,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "latitude",
+        "lat",
+        "Latitude"
+      ]
+    },
+    "longitude": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.292,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "longitude",
+        "lon",
+        "Longitude",
+        "lng"
+      ]
+    },
+    "region": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "region",
+        "county",
+        "state",
+        "province"
+      ]
+    },
+    "distance": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.208,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "distance"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "maps",
+    "concept": "place",
+    "providers": 24,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

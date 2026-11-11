@@ -1,0 +1,21 @@
+provider: openstreetmap
+apis_io: https://apis.io/providers/openstreetmap/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - reverse
+    properties:
+      address:
+      - display_name
+      - address
+      confidence: importance
+      id:
+      - place_id
+      - osm_id
+      latitude: lat
+      longitude: lon
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/openstreetmap-nominatim-openapi.yml#GET /reverse

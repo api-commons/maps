@@ -1,0 +1,18 @@
+provider: moodys-rms
+apis_io: https://apis.io/providers/moodys-rms/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - geocode
+    properties:
+      name: name
+      country: country
+      latitude: latitude
+      longitude: longitude
+      postal_code: postalCode
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/moodys-rms-risk-modeler-openapi.yml#POST /v1/locations/geocode
+    - openapi/_original/moodys-rms-risk-modeler-openapi.yml#POST /v1/locations/{id}/geocode

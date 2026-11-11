@@ -1,0 +1,19 @@
+provider: maptiler
+apis_io: https://apis.io/providers/maptiler/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - geocoding
+    properties:
+      name: text
+      country: country_code
+      geometry: geometry
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/maptiler-maptiler-openapi.yml#GET /geocoding/{id}.json
+    - openapi/_original/maptiler-maptiler-openapi.yml#GET /geocoding/{longitude},{latitude}.json
+    - openapi/_original/maptiler-maptiler-openapi.yml#GET /geocoding/{queries}.json
+    - openapi/_original/maptiler-maptiler-openapi.yml#GET /geocoding/{query}.json

@@ -1,0 +1,27 @@
+provider: trimble
+apis_io: https://apis.io/providers/trimble/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - geocode
+    properties:
+      address: Address
+      country: Country
+      confidence: Quality
+      latitude: Lat
+      longitude: Lon
+      region: State
+      city: City
+      postal_code: Zip
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/trimble-maps-openapi.yml#GET /Service.svc/geocode
+  route:
+    path_segment:
+    - route
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/trimble-maps-openapi.yml#GET /Service.svc/route

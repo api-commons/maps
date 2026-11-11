@@ -1,0 +1,31 @@
+provider: valhalla
+apis_io: https://apis.io/providers/valhalla/
+context: maps
+generated: '2026-11-10'
+concepts:
+  route:
+    path_segment:
+    - route
+    properties:
+      id: id
+      units: units
+      costing: costing
+      costing_options: costing_options
+      language: language
+      locations: locations
+      roundabout_exits: roundabout_exits
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/openapi.yaml#POST /route
+  distance_matrix:
+    path_segment:
+    - sources_to_targets
+    properties:
+      destinations: targets
+      origins: sources
+      units: units
+      costing: costing
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openapi.yaml#POST /sources_to_targets

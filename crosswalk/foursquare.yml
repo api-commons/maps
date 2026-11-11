@@ -1,0 +1,18 @@
+provider: foursquare
+apis_io: https://apis.io/providers/foursquare/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - places
+    properties:
+      name: name
+      geometry: location
+      category: categories
+      latitude: latitude
+      longitude: longitude
+      distance: distance
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/foursquare-places-openapi.yml#GET /places/{fsq_place_id}

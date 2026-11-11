@@ -1,0 +1,23 @@
+provider: groundtruth
+apis_io: https://apis.io/providers/groundtruth/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - pois
+    properties:
+      id: id
+      address: address
+      city: city
+      country: country
+      latitude: latitude
+      longitude: longitude
+      region: state
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/groundtruth-openapi.json#DELETE /location_groups/{location_group_id}/pois
+    - openapi/_original/groundtruth-openapi.json#GET /location_groups/{location_group_id}/pois
+    - openapi/_original/groundtruth-openapi.json#GET /pois/{poi_id}
+    - openapi/_original/groundtruth-openapi.json#POST /location_groups/{location_group_id}/pois
+    - openapi/_original/groundtruth-openapi.json#POST /search/location_groups/pois

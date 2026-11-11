@@ -1,0 +1,13 @@
+provider: walk-score
+apis_io: https://apis.io/providers/walk-score/
+context: maps
+generated: '2026-11-10'
+concepts:
+  route:
+    path_segment:
+    - route
+    properties:
+      id: id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/walk-score-transit-openapi.yml#GET /transit/route/{routeId}/

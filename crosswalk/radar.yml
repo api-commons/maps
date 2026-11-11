@@ -1,0 +1,35 @@
+provider: radar
+apis_io: https://apis.io/providers/radar/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - forward
+    - reverse
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/radar-openapi.yml#GET /geocode/forward
+    - openapi/_original/radar-openapi.yml#GET /geocode/reverse
+  place:
+    path_segment:
+    - places
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/radar-openapi.yml#GET /search/places
+  route:
+    path_segment:
+    - directions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/radar-openapi.yml#GET /route/directions
+  distance_matrix:
+    path_segment:
+    - matrix
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/radar-openapi.yml#GET /route/matrix

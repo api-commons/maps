@@ -1,0 +1,16 @@
+provider: here-technologies
+apis_io: https://apis.io/providers/here-technologies/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - geocode
+    properties:
+      address: address
+      name: title
+      geometry: position
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/here-technologies-openapi.yml#GET /geocode

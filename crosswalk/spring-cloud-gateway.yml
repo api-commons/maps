@@ -1,0 +1,18 @@
+provider: spring-cloud-gateway
+apis_io: https://apis.io/providers/spring-cloud-gateway/
+context: maps
+generated: '2026-11-10'
+concepts:
+  route:
+    path_segment:
+    - routes
+    properties:
+      id: id
+      metadata: metadata
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/spring-cloud-gateway-actuator-openapi.yml#DELETE /routes/{id}
+    - openapi/_original/spring-cloud-gateway-actuator-openapi.yml#GET /routes
+    - openapi/_original/spring-cloud-gateway-actuator-openapi.yml#GET /routes/{id}
+    - openapi/_original/spring-cloud-gateway-actuator-openapi.yml#POST /routes
+    - openapi/_original/spring-cloud-gateway-actuator-openapi.yml#PUT /routes/{id}

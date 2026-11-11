@@ -1,0 +1,85 @@
+context: maps
+name: Maps and Geocoding
+intro: >-
+  The common maps vocabulary -- the geocodes that turn addresses into coordinates and back,
+  the places and points of interest on the map, the routes between them and the distance
+  matrices that compare many at once -- distilled from the APIs that already exist. Maps
+  APIs are operations more than resources, so each concept is the shape of a result.
+tags: [Geocoding, Mapping, Maps, GIS, Routing, Location, Location Intelligence, Navigation, Places, Geospatial]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, features, query, attribution, type, info, status]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, place_id, fsq_id, osm_id, gid]
+  latitude: [lat, y, latitude_deg]
+  longitude: [lng, lon, long, x, longitude_deg]
+  address: [formatted_address, display_name, label, full_address, address_line, formatted, place_name, freeform_address, address_label]
+  name: [title, display_name_short, text, place_name_short]
+  country: [country_code, country_name, iso_country_code]
+  postal_code: [postcode, zip, zipcode, postal]
+  city: [locality, town, municipality, place]
+  region: [state, province, admin1, administrative_area_level_1, county]
+  geometry: [location, coordinates, point, center, position, geocodes, bbox, bounds, viewport]
+  confidence: [score, relevance, accuracy, match_quality, quality, importance]
+
+concepts:
+  geocode:
+    segments: [geocode, geocoding, geocoder, reverse, forward, search@geocode|geocoding|address|addresses, autocomplete@address|geocode, address_lookup, validate@address, "addresses@verify|validation"]
+    aliases:
+      components: [address_components, address_details, components_list, properties]
+      type: [result_type, types, layer, match_type, place_type, feature_type]
+  place:
+    segments: [places, place, pois, poi, points_of_interest, venues@places|search, nearby, nearbysearch, autocomplete@places]
+    aliases:
+      category: [categories, types, type, poi_category, amenity, kind]
+      phone: [phone_number, tel, international_phone_number]
+      rating: [stars, user_rating]
+      website: [url, website_url]
+      opening_hours: [hours, open_hours, opening_hours_text]
+  route:
+    segments: [routes, route, directions, direction, routing, navigation@route|routes, optimized-trips, optimization@route|routes]
+    aliases:
+      distance: [distance_meters, length, length_in_meters, total_distance, summary_distance]
+      duration: [duration_seconds, travel_time, time, travel_time_in_seconds, total_duration]
+      polyline: [geometry_polyline, overview_polyline, shape, encoded_polyline, path, points]
+      legs: [sections, segments, steps, instructions]
+      mode: [travel_mode, profile, transport_mode, vehicle]
+  distance_matrix:
+    segments: [matrix, matrices, distancematrix, distance_matrix, distance-matrix, matrix_routing, sources_to_targets]
+    aliases:
+      distances: [distance, distance_values, rows]
+      durations: [duration, travel_times, times]
+      origins: [sources, from, origin_addresses]
+      destinations: [targets, to, destination_addresses]
+
+exclude:
+  geocode:
+    apifreaks-api-hub-for-developers: /domain/dns/reverse is a reverse DNS lookup
+  place:
+    2s-io: /geo/nearby aggregates airports, schools and climate stations
+  route:
+    roxyapi: /vastu/directions are compass directions in Vastu
+duplicates:
+  hivemapper: [bee-maps]
+
+findings:
+  - "A geocode agrees on an address, a name, a country, a confidence score, coordinates and a
+    geometry -- once GeoJSON is read as GeoJSON. Pelias-style geocoders return
+    FeatureCollections whose fields live under each Feature's `properties`."
+  - "A place agrees on id, name, geometry and address; categories and opening hours are
+    modelled by too few to share."
+  - "A route agrees on nothing: routing engines publish their request options (costing,
+    profiles, avoidances) far more than a result shape, and Valhalla, OSRM and the commercial
+    APIs each return legs and geometry differently."
+  - "A distance matrix agrees on its origins and destinations."
+decisions:
+  - "Maps concepts are results, not resources: a geocode is what `/geocode`, `/reverse` and
+    address search return."
+  - "GeoJSON is read as a standard: the census unwraps `features` and lifts a Feature's
+    `properties` beside its geometry (a census change that applies to every context)."
+  - "Points of interest, nearby search and place autocomplete are places; directions and
+    route optimisation are routes; sources-to-targets is a distance matrix."
+  - "A reverse DNS lookup and Vastu compass directions are not maps (excluded by name)."
+  - "Duplicates merged: Bee Maps into Hivemapper."

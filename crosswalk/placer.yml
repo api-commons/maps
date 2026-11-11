@@ -1,0 +1,14 @@
+provider: placer
+apis_io: https://apis.io/providers/placer/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - poi
+    properties:
+      name: name
+      address: address
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/placer-papi-openapi.json#GET /v1/poi

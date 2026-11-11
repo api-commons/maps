@@ -1,0 +1,18 @@
+provider: precisely-apis
+apis_io: https://apis.io/providers/precisely-apis/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - poi
+    - autocomplete
+    properties:
+      id: id
+      name: name
+      geometry: geometry
+      distance: distance
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/precisely-apis-openapi.yml#GET /places/v1/poi/autocomplete
+    - openapi/_original/precisely-apis-openapi.yml#GET /places/v1/poi/{id}

@@ -1,0 +1,17 @@
+provider: openweathermap
+apis_io: https://apis.io/providers/openweathermap/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - reverse
+    properties:
+      name: name
+      country: country
+      latitude: lat
+      longitude: lon
+      region: state
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openweathermap-geocoding-openapi.yml#GET /reverse

@@ -1,0 +1,23 @@
+provider: flightaware
+apis_io: https://apis.io/providers/flightaware/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - nearby
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/flightaware-openapi.yml#GET /airports/nearby
+    - openapi/_original/flightaware-openapi.yml#GET /airports/{id}/nearby
+  route:
+    path_segment:
+    - route
+    - routes
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/flightaware-openapi.yml#GET /airports/{id}/routes/{dest_id}
+    - openapi/_original/flightaware-openapi.yml#GET /flights/{id}/route
+    - openapi/_original/flightaware-openapi.yml#GET /history/flights/{id}/route

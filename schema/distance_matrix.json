@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/maps/main/schema/distance_matrix.json",
+  "title": "Distance Matrix",
+  "description": "The common distance_matrix in Maps and Geocoding, distilled from 8 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "destinations": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.875,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "destinations",
+        "targets"
+      ]
+    },
+    "origins": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.875,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "sources",
+        "origins"
+      ]
+    },
+    "units": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "units"
+      ]
+    },
+    "costing": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "costing"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.375,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "id"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "maps",
+    "concept": "distance_matrix",
+    "providers": 8,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

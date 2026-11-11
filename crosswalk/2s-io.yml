@@ -1,0 +1,18 @@
+provider: 2s-io
+apis_io: https://apis.io/providers/2s-io/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - reverse
+    properties:
+      address:
+      - formattedAddress
+      - address
+      confidence: importance
+      latitude: latitude
+      longitude: longitude
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/2s-io-openapi.json#GET /api/geocode/reverse

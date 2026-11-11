@@ -1,0 +1,13 @@
+provider: university-of-minnesota
+apis_io: https://apis.io/providers/university-of-minnesota/
+context: maps
+generated: '2026-11-10'
+concepts:
+  distance_matrix:
+    path_segment:
+    - matrix
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/university-of-minnesota-gems-exchange-pedtools-openapi.json#POST /cop/matrix
+    - openapi/_original/university-of-minnesota-gems-exchange-pedtools-openapi.yml#POST /cop/matrix

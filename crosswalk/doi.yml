@@ -1,0 +1,17 @@
+provider: doi
+apis_io: https://apis.io/providers/doi/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - places
+    properties:
+      id: id
+      name: title
+      geometry: location
+      latitude: latitude
+      longitude: longitude
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/doi-openapi.json#GET /places

@@ -1,0 +1,18 @@
+provider: hypertrack
+apis_io: https://apis.io/providers/hypertrack/
+context: maps
+generated: '2026-11-10'
+concepts:
+  route:
+    path_segment:
+    - routes
+    properties:
+      duration: duration
+      distance: distance
+      metadata: metadata
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hypertrack-openapi.yaml#GET /orders/routes/
+    - openapi/_original/hypertrack-openapi.yaml#GET /orders/routes/{route_handle}
+    - openapi/_original/hypertrack-openapi.yaml#PATCH /orders/routes/{route_handle}
+    - openapi/_original/hypertrack-openapi.yaml#POST /orders/routes/

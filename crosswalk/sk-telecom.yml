@@ -1,0 +1,16 @@
+provider: sk-telecom
+apis_io: https://apis.io/providers/sk-telecom/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - pois
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /congestion/rltm/pois/{poiId}
+    - openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /congestion/stat/hourly/pois/{poiId}
+    - openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /congestion/stat/raw/hourly/pois/{poiId}
+    - openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /meta/pois
+    - openapi/_original/sk-telecom-puzzle-place-congestion-openapi.json#GET /visit/count/raw/daily/pois/{poiId}

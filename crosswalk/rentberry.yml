@@ -1,0 +1,26 @@
+provider: rentberry
+apis_io: https://apis.io/providers/rentberry/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - geocode
+    properties:
+      address: formattedAddress
+      geometry: location
+      type: placeType
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/rentberry-openapi.json#POST /v{version}/place/geocode
+    - openapi/_original/rentberry-openapi.yml#POST /v{version}/place/geocode
+  place:
+    path_segment:
+    - place
+    properties:
+      address: formattedAddress
+      category: types
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/rentberry-openapi.json#POST /v{version}/apartment/search/place
+    - openapi/_original/rentberry-openapi.yml#POST /v{version}/apartment/search/place

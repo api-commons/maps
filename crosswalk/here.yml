@@ -1,0 +1,43 @@
+provider: here
+apis_io: https://apis.io/providers/here/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - geocode
+    properties:
+      address: address
+      name: title
+      geometry: position
+      id: id
+      type: resultType
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/here-geocoding-and-search-v7-openapi.json#GET /geocode
+    - openapi/_original/here-geocoding-and-search-v7-openapi_2.json#GET /geocode
+  route:
+    path_segment:
+    - routes
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/here-indoor-routing-v1-openapi.yml#GET /routes
+    - openapi/_original/here-indoor-routing-v1-openapi_2.yml#GET /routes
+    - openapi/_original/here-intermodal-routing-v8-openapi.yml#GET /routes
+    - openapi/_original/here-intermodal-routing-v8-openapi_2.yml#GET /routes
+    - openapi/_original/here-public-transit-v8-openapi.yml#GET /routes
+  distance_matrix:
+    path_segment:
+    - matrix
+    - matrices
+    properties:
+      destinations: destinations
+      origins: origins
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/here-matrix-routing-v8-openapi.yml#GET /matrix/{matrixId}
+    - openapi/_original/here-matrix-routing-v8-openapi.yml#POST /matrix
+    - openapi/_original/here-matrix-routing-v8-openapi_2.yml#GET /matrix/{matrixId}
+    - openapi/_original/here-matrix-routing-v8-openapi_2.yml#POST /matrix
+    - openapi/_original/here-tour-planning-v3-openapi.yml#POST /matrices

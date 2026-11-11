@@ -1,0 +1,694 @@
+context: maps
+name: Maps and Geocoding
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Geocoding
+  - Mapping
+  - Maps
+  - GIS
+  - Routing
+  - Location
+  - Location Intelligence
+  - Navigation
+  - Places
+  - Geospatial
+  providers_with_harvested_openapi: 193
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded:
+  geocode:
+    apifreaks-api-hub-for-developers: /domain/dns/reverse is a reverse DNS lookup
+  place:
+    2s-io: /geo/nearby aggregates airports, schools and climate stations
+  route:
+    roxyapi: /vastu/directions are compass directions in Vastu
+duplicates:
+  hivemapper:
+  - bee-maps
+shared_specs: {}
+concepts:
+  geocode:
+    segments_seen:
+      reverse: 14
+      geocode: 8
+      search: 3
+      forward: 3
+      autocomplete: 2
+      geocoding: 1
+    providers_exposing: 22
+    providers_with_readable_schema: 21
+    operations:
+    - operation: GET collection
+      providers: 19
+      share: 0.864
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.227
+      tier: extended
+    - operation: GET item
+      providers: 1
+      share: 0.045
+      tier: long-tail
+    properties:
+    - name: address
+      tier: core
+      providers: 17
+      share: 0.81
+      type: string
+      spellings:
+      - address
+      - label
+      - formattedAddress
+      - display_name
+      - formatted
+      - formatted_address
+      - addressLabel
+      - Address
+    - name: name
+      tier: core
+      providers: 14
+      share: 0.667
+      type: string
+      spellings:
+      - name
+      - text
+      - title
+      - Name
+    - name: country
+      tier: core
+      providers: 13
+      share: 0.619
+      type: string
+      spellings:
+      - country
+      - country_code
+      - CountryCode
+      - CountryName
+      - countryCode
+      - Country
+    - name: confidence
+      tier: core
+      providers: 12
+      share: 0.571
+      type: number
+      spellings:
+      - confidence
+      - accuracy
+      - importance
+      - Quality
+    - name: geometry
+      tier: core
+      providers: 12
+      share: 0.571
+      type: object
+      spellings:
+      - geometry
+      - location
+      - position
+      - bbox
+    - name: id
+      tier: core
+      providers: 11
+      share: 0.524
+      type: string
+      spellings:
+      - id
+      - gid
+      - place_id
+      - osm_id
+    - name: latitude
+      tier: core
+      providers: 11
+      share: 0.524
+      type: number
+      spellings:
+      - lat
+      - latitude
+      - Latitude
+      - Lat
+    - name: longitude
+      tier: core
+      providers: 11
+      share: 0.524
+      type: number
+      spellings:
+      - longitude
+      - lon
+      - Longitude
+      - lng
+      - Lon
+    - name: region
+      tier: extended
+      providers: 10
+      share: 0.476
+      type: string
+      spellings:
+      - region
+      - county
+      - state
+      - province
+      - State
+    - name: type
+      tier: extended
+      providers: 10
+      share: 0.476
+      type: string
+      spellings:
+      - layer
+      - match_type
+      - result_type
+      - resultType
+      - placeType
+    - name: city
+      tier: extended
+      providers: 9
+      share: 0.429
+      type: string
+      spellings:
+      - locality
+      - city
+      - municipality
+      - town
+      - City
+    - name: source
+      tier: extended
+      providers: 6
+      share: 0.286
+      type: string
+      spellings:
+      - source
+    - name: street
+      tier: extended
+      providers: 6
+      share: 0.286
+      type: string
+      spellings:
+      - street
+    - name: postal_code
+      tier: extended
+      providers: 5
+      share: 0.238
+      type: string
+      spellings:
+      - postal_code
+      - postalCode
+      - postcode
+      - Zip
+    long_tail_count: 203
+    long_tail_sample:
+    - categories
+    - country_gid
+    - distance
+    - housenumber
+    - locality_gid
+    - neighbourhood
+    - postalcode
+    - source_id
+    - borough
+    - class
+    - continent
+    - region_gid
+    - addendum
+    - borough_gid
+    - boundingbox
+    - category
+    - country_a
+    - extratags
+    - icon
+    - licence
+    - namedetails
+    - neighbourhood_gid
+    - number
+    - osm_type
+    - region_a
+    - response
+    - state_code
+    - timezone
+    - access
+    - accuracy_type
+    - address_block_type
+    - address_id
+    - address_line1
+    - address_line2
+    - address_lines
+    - address_text
+    - address_type
+    - address_usage
+    - addresstype
+    - admin1_code
+  place:
+    segments_seen:
+      places: 10
+      place: 5
+      poi: 4
+      pois: 4
+      nearby: 3
+      autocomplete: 2
+    providers_exposing: 25
+    providers_with_readable_schema: 24
+    operations:
+    - operation: GET collection
+      providers: 18
+      share: 0.72
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.32
+      tier: extended
+    - operation: POST collection
+      providers: 5
+      share: 0.2
+      tier: extended
+    - operation: DELETE collection
+      providers: 1
+      share: 0.04
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 16
+      share: 0.667
+      type: string
+      spellings:
+      - id
+      - gid
+      - placeId
+      - place_id
+      - ID
+      - UUID
+      - osm_id
+      - _id
+    - name: name
+      tier: core
+      providers: 16
+      share: 0.667
+      type: string
+      spellings:
+      - name
+      - title
+      - Name
+    - name: geometry
+      tier: core
+      providers: 13
+      share: 0.542
+      type: object
+      spellings:
+      - geometry
+      - location
+      - viewport
+    - name: address
+      tier: core
+      providers: 12
+      share: 0.5
+      type: string
+      spellings:
+      - address
+      - label
+      - formattedAddress
+      - displayName
+      - formatted
+    - name: category
+      tier: extended
+      providers: 9
+      share: 0.375
+      type: array
+      spellings:
+      - categories
+      - types
+      - category
+    - name: city
+      tier: extended
+      providers: 7
+      share: 0.292
+      type: string
+      spellings:
+      - locality
+      - city
+      - municipality
+      - town
+    - name: country
+      tier: extended
+      providers: 7
+      share: 0.292
+      type: string
+      spellings:
+      - country
+      - country_code
+      - CountryCode
+      - CountryName
+    - name: latitude
+      tier: extended
+      providers: 7
+      share: 0.292
+      type: number
+      spellings:
+      - latitude
+      - lat
+      - Latitude
+    - name: longitude
+      tier: extended
+      providers: 7
+      share: 0.292
+      type: number
+      spellings:
+      - longitude
+      - lon
+      - Longitude
+      - lng
+    - name: region
+      tier: extended
+      providers: 6
+      share: 0.25
+      type: string
+      spellings:
+      - region
+      - county
+      - state
+      - province
+    - name: distance
+      tier: extended
+      providers: 5
+      share: 0.208
+      type: number
+      spellings:
+      - distance
+    long_tail_count: 369
+    long_tail_sample:
+    - confidence
+    - housenumber
+    - layer
+    - street
+    - borough
+    - country_gid
+    - limit
+    - locality_gid
+    - neighbourhood
+    - opening_hours
+    - phone
+    - photos
+    - poi_id
+    - postalcode
+    - rating
+    - source
+    - source_id
+    - addendum
+    - amenities
+    - borough_gid
+    - brand_name
+    - business_status
+    - category_ids
+    - continent
+    - counts
+    - google_maps_uri
+    - national_phone_number
+    - neighbourhood_gid
+    - payment_options
+    - plus_code
+    - postal_code
+    - price_level
+    - primary_type
+    - region_a
+    - region_gid
+    - regular_opening_hours
+    - relevance_score
+    - reviews
+    - sector
+    - short_formatted_address
+  route:
+    segments_seen:
+      route: 7
+      routes: 6
+      directions: 3
+      routing: 1
+    providers_exposing: 15
+    providers_with_readable_schema: 13
+    operations:
+    - operation: GET collection
+      providers: 11
+      share: 0.733
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.533
+      tier: core
+    - operation: POST collection
+      providers: 6
+      share: 0.4
+      tier: extended
+    - operation: POST item
+      providers: 2
+      share: 0.133
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.133
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.067
+      tier: long-tail
+    properties:
+    - name: geometry
+      tier: extended
+      providers: 5
+      share: 0.385
+      type: object
+      spellings:
+      - geometry
+      - position
+      - location
+      - bbox
+      - coordinates
+    - name: id
+      tier: extended
+      providers: 5
+      share: 0.385
+      type: string
+      spellings:
+      - id
+      - route_id
+    - name: duration
+      tier: extended
+      providers: 4
+      share: 0.308
+      type: integer
+      spellings:
+      - duration
+      - time
+    - name: units
+      tier: extended
+      providers: 4
+      share: 0.308
+      type: string
+      spellings:
+      - units
+    - name: costing
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: string
+      spellings:
+      - costing
+    - name: costing_options
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: object
+      spellings:
+      - costing_options
+    - name: distance
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: number
+      spellings:
+      - distance
+    - name: language
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: string
+      spellings:
+      - language
+    - name: legs
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: array
+      spellings:
+      - legs
+      - instructions
+    - name: locations
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: array
+      spellings:
+      - locations
+    - name: metadata
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: object
+      spellings:
+      - metadata
+    - name: roundabout_exits
+      tier: extended
+      providers: 3
+      share: 0.231
+      type: boolean
+      spellings:
+      - roundabout_exits
+    long_tail_count: 125
+    long_tail_sample:
+    - admin_crossings
+    - agency
+    - alternates
+    - avoid
+    - banner_instructions
+    - date_time
+    - directions_type
+    - elevation_interval
+    - exclude_locations
+    - exclude_polygons
+    - format
+    - linear_cost_factors
+    - linear_references
+    - mode
+    - name
+    - prioritize_bidirectional
+    - recostings
+    - shape_format
+    - turn_lanes
+    - voice_instructions
+    - admin_area_crossings
+    - admin_areas
+    - agency_url
+    - alerts
+    - alternative_routes
+    - assigned_at
+    - attributes
+    - avoid_borders
+    - avoid_countries
+    - avoid_features
+    - avoid_polygons
+    - candidate_devices
+    - category
+    - cemv_support
+    - color
+    - completed_at
+    - completion_source
+    - completion_type
+    - continue_straight
+    - continuous_drop_off
+  distance_matrix:
+    segments_seen:
+      matrix: 5
+      sources_to_targets: 3
+      distance-matrix: 1
+      matrices: 1
+    providers_exposing: 9
+    providers_with_readable_schema: 8
+    operations:
+    - operation: POST collection
+      providers: 6
+      share: 0.667
+      tier: core
+    - operation: GET collection
+      providers: 3
+      share: 0.333
+      tier: extended
+    - operation: GET item
+      providers: 1
+      share: 0.111
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.111
+      tier: long-tail
+    properties:
+    - name: destinations
+      tier: core
+      providers: 7
+      share: 0.875
+      type: array
+      spellings:
+      - destinations
+      - targets
+    - name: origins
+      tier: core
+      providers: 7
+      share: 0.875
+      type: array
+      spellings:
+      - sources
+      - origins
+    - name: units
+      tier: core
+      providers: 4
+      share: 0.5
+      type: string
+      spellings:
+      - units
+    - name: costing
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: string
+      spellings:
+      - costing
+    - name: id
+      tier: extended
+      providers: 3
+      share: 0.375
+      type: string
+      spellings:
+      - id
+    long_tail_count: 54
+    long_tail_sample:
+    - costing_options
+    - date_time
+    - distances
+    - durations
+    - exclude_locations
+    - exclude_polygons
+    - expansion_max_distance
+    - format
+    - language
+    - linear_cost_factors
+    - matrix_locations
+    - shape_format
+    - verbose
+    - algorithm
+    - allow
+    - arrival_time
+    - avoid
+    - calculation_type
+    - cop
+    - country
+    - departure_time
+    - error_codes
+    - ev
+    - exclude
+    - forward_mapping
+    - locations
+    - matrix_attributes
+    - matrix_id
+    - max_distance
+    - max_duration
+    - max_results
+    - max_speed_on_segment
+    - metadata
+    - metrics
+    - min_distance
+    - min_duration
+    - mode
+    - order_by
+    - origin
+    - pedestrian

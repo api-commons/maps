@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/maps/main/schema/route.json",
+  "title": "Route",
+  "description": "The common route in Maps and Geocoding, distilled from 13 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "geometry": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.385,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "geometry",
+        "position",
+        "location",
+        "bbox",
+        "coordinates"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.385,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "id",
+        "route_id"
+      ]
+    },
+    "duration": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.308,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "duration",
+        "time"
+      ]
+    },
+    "units": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.308,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "units"
+      ]
+    },
+    "costing": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "costing"
+      ]
+    },
+    "costing_options": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "costing_options"
+      ]
+    },
+    "distance": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "distance"
+      ]
+    },
+    "language": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "language"
+      ]
+    },
+    "legs": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "legs",
+        "instructions"
+      ]
+    },
+    "locations": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "locations"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "metadata"
+      ]
+    },
+    "roundabout_exits": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "roundabout_exits"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "maps",
+    "concept": "route",
+    "providers": 13,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

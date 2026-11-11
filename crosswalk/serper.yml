@@ -1,0 +1,12 @@
+provider: serper
+apis_io: https://apis.io/providers/serper/
+context: maps
+generated: '2026-11-10'
+concepts:
+  place:
+    path_segment:
+    - places
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/serper-google-search-api-openapi.yml#POST /places

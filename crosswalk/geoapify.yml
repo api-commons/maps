@@ -1,0 +1,87 @@
+provider: geoapify
+apis_io: https://apis.io/providers/geoapify/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - search
+    - reverse
+    - autocomplete
+    properties:
+      address: formatted
+      name:
+      - name
+      - text
+      country:
+      - country
+      - country_code
+      geometry:
+      - bbox
+      - geometry
+      id: place_id
+      latitude: lat
+      longitude: lon
+      region:
+      - region
+      - state
+      - province
+      - county
+      type: result_type
+      city:
+      - city
+      - municipality
+      - town
+      - locality
+      street: street
+      postal_code:
+      - postcode
+      - postal_code
+    core_coverage: 0.875
+    evidence:
+    - openapi/_original/geoapify-address-autocomplete-openapi.json#GET /geocode/autocomplete
+    - openapi/_original/geoapify-batch-openapi.json#GET /batch/geocode/reverse
+    - openapi/_original/geoapify-batch-openapi.json#GET /batch/geocode/search
+    - openapi/_original/geoapify-batch-openapi.json#POST /batch/geocode/reverse
+    - openapi/_original/geoapify-batch-openapi.json#POST /batch/geocode/search
+  place:
+    path_segment:
+    - places
+    properties:
+      id: place_id
+      name: name
+      geometry: geometry
+      address: formatted
+      category: categories
+      city:
+      - city
+      - municipality
+      - town
+      - locality
+      country:
+      - country
+      - country_code
+      latitude: lat
+      longitude: lon
+      region:
+      - region
+      - state
+      - province
+      - county
+      distance: distance
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/geoapify-places-openapi.json#GET /places
+    - openapi/_original/geoapify-places-openapi.json#POST /places
+  route:
+    path_segment:
+    - routing
+    properties:
+      geometry: geometry
+      duration: time
+      units: units
+      distance: distance
+      legs: legs
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/geoapify-routing-openapi.json#GET /routing

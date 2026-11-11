@@ -1,0 +1,31 @@
+provider: geoloods
+apis_io: https://apis.io/providers/geoloods/
+context: maps
+generated: '2026-11-10'
+concepts:
+  geocode:
+    path_segment:
+    - geocode
+    properties:
+      name: Name
+      country:
+      - CountryCode
+      - CountryName
+      latitude: Latitude
+      longitude: Longitude
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/geoloods-openapi.json#GET /geocode
+  place:
+    path_segment:
+    - nearby
+    properties:
+      name: Name
+      country:
+      - CountryCode
+      - CountryName
+      latitude: Latitude
+      longitude: Longitude
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/geoloods-openapi.json#GET /nearby
